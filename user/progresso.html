@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/e03fd3f169.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,400,700" rel="stylesheet">
+    
+    <style>
+
+
+/*---------- Class-Hsistory ----------*/
+.class-history {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+.class-history:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #464a4e;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.class-history > li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.class-history > li:before,
+.class-history > li:after {
+    content: " ";
+    display: table;
+}
+
+.class-history > li:after {
+    clear: both;
+}
+
+.class-history > li > .class-history-panel {
+    width: 46%;
+    float: left;
+    border: 2px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.class-history > li > .class-history-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.class-history > li > .class-history-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    /*border-left: 14px solid #fff;
+    border-right: 0 solid #fff;*/
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.class-history > li > .class-history-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #999999;
+    z-index: 0;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.class-history > li.class-history-inverted > .class-history-panel {
+    float: right;
+}
+
+.class-history > li.class-history-inverted > .class-history-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.class-history > li.class-history-inverted > .class-history-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.class-history-badge.primary {
+    background-color: #2e6da4 !important;
+}
+
+.class-history-badge.success {
+    background-color: #3f903f !important;
+}
+
+.class-history-badge.warning {
+    background-color: #f0ad4e !important;
+}
+
+.class-history-badge.danger {
+    background-color: #d9534f !important;
+}
+
+.class-history-badge.info {
+    background-color: #5bc0de !important;
+}
+
+.class-history-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.class-history-body > p,
+.class-history-body > ul {
+    margin-bottom: 0;
+}
+
+.class-history-body > p + p {
+    margin-top: 5px;
+}
+
+.class-history > li > .class-history-badge.stage1, .class-history-panel.stage1 {
+    border: 2px solid #9E9E9E !important;
+}
+
+.class-history > li > .class-history-badge.stage2, .class-history-panel.stage2 {
+    border: 2px solid #FF5722 !important;
+}
+
+.class-history > li > .class-history-badge.stage3, .class-history-panel.stage3 {
+    border: 2px solid #8BC34A !important;
+}
+
+.class-history > li > .class-history-badge.stage4, .class-history-panel.stage4 {
+    border: 2px solid #FF9800 !important;
+}
+
+.class-history > li > .class-history-badge.stage5, .class-history-panel.stage5 {
+    border: 2px solid #3F51B5 !important;
+}
+
+.class-history > li > .class-history-badge.falta, .class-history-panel.falta {
+    border: 2px solid #F44336 !important;
+}
+
+.class-history > li > .class-history-badge.falta i {
+    color: #F44336 !important;
+}
+
+.class-history-panel.falta:after {
+    border-left: 14px solid #F44336;
+    border-right: 0px solid #F44336;
+}
+
+.class-history > li > .class-history-badge.presenca, .class-history-panel.presenca {
+    border: 2px solid #4CAF50 !important;
+}
+
+.class-history > li > .class-history-badge.presenca i {
+    color: #4CAF50 !important;
+}
+
+.class-history-panel.presenca:after {
+    border-left: 14px solid #4CAF50;
+    border-right: 0px solid #4CAF50;
+}
+
+.class-history > li > .class-history-badge.stage1 i {
+    color: #9E9E9E !important;
+}
+
+.class-history > li > .class-history-badge.stage2 i {
+    color: #FF5722 !important;
+}
+
+.class-history > li > .class-history-badge.stage3 i {
+    color: #8BC34A !important;
+}
+
+.class-history > li > .class-history-badge.stage4 i {
+    color: #FF9800 !important;
+}
+
+.class-history > li > .class-history-badge.stage5 i {
+    color: #3F51B5 !important;
+}
+
+.class-history-panel.stage1:after {
+    border-left: 14px solid #9E9E9E;
+    border-right: 0px solid #9E9E9E;
+}
+
+.class-history-panel.stage2:after {
+    border-left: 14px solid #FF5722;
+    border-right: 0px solid #FF5722;
+}
+
+.class-history-panel.stage3:after {
+    border-left: 14px solid #8BC34A;
+    border-right: 0px solid #8BC34A;
+}
+
+.class-history-panel.stage4:after {
+    border-left: 14px solid #FF9800;
+    border-right: 0px solid #FF9800;
+}
+
+.class-history-panel.stage5:after {
+    border-left: 14px solid #3F51B5;
+    border-right: 0px solid #3F51B5;
+}
+
+ul.tab-nav.tn-justified {
+    background: #FFF !important;
+}
+
+ul.tab-nav.tn-justified:not(.tn-vertical):not([data-tab-color]) > li > a:after {
+    background: #c22727 !important;
+}
+
+@media (max-width: 767px) {
+    ul.class-history:before {
+        left: 40px;
+    }
+
+    ul.class-history > li > .class-history-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    ul.class-history > li > .class-history-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.class-history > li > .class-history-panel {
+        float: right;
+    }
+
+    ul.class-history > li > .class-history-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    ul.class-history > li > .class-history-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+}
+
+.class-history-badge.bg-light.border-warning i {
+    color: #ffc107 !important;
+}
+
+.class-history-badge.bg-light.border-danger i {
+    color: #dc3545 !important;
+}
+
+.class-history-badge.bg-light.border-secondary i {
+    color: #868e96 !important;
+}
+
+.class-history-badge.bg-light.border-info i {
+    color: #17a2b8 !important;
+}
+
+.class-history-badge.bg-light.border-success i {
+    color: #28a745 !important;
+}
+
+
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+        <main class="col-12 col-md-9 col-xl-10 p-3 bd-content" role="main">
+ 
+<ul class="class-history">
+        <li class="class-history-inverted">
+                <div class="class-history-badge bg-light border-success"><i class="fa fa-file-text" aria-hidden="true"></i></div>
+                <div class="class-history-panel bg-light border-success">
+                <div class="class-history-heading">
+                <h4 class="class-history-title m-b-0 c-black text-left text-uppercase">Cubo</h4>
+                <p class="m-0">
+                <small class="text-muted f-12 text-uppercase">
+                    <i class="fa fa-calendar" aria-hidden="true"></i> Segunda, 30 de Setembro de 2019 às 18:00
+                </small>
+                </p>
+                </div>
+                </div>
+                </li>
+                <li>
+                <div class="class-history-badge bg-light border-success">
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                </div>
+                <div class="class-history-panel bg-light border-success">
+                <div class="class-history-heading">
+                <h4 class="class-history-title m-b-0 c-black text-left text-uppercase">Triângulos</h4>
+                <p class="m-0">
+                <small class="text-muted f-12 text-uppercase">
+                    <i class="fa fa-calendar" aria-hidden="true"></i> Segunda, 30 de Setembro de 2019 às 19:00
+                </small>
+                </p>
+                </div>
+                </div>
+                </li>
+
+<li class="class-history-inverted">
+<div class="class-history-badge bg-light border-success"><i class="fa fa-file-text" aria-hidden="true"></i></div>
+<div class="class-history-panel bg-light border-success">
+<div class="class-history-heading">
+<h4 class="class-history-title m-b-0 c-black text-left text-uppercase">Esferas</h4>
+<p class="m-0">
+<small class="text-muted f-12 text-uppercase">
+    <i class="fa fa-calendar" aria-hidden="true"></i> Segunda, 30 de Setembro de 2019 às 18:00
+</small>
+</p>
+</div>
+</div>
+</li>
+<li>
+<div class="class-history-badge bg-light border-success">
+<i class="fa fa-file-text" aria-hidden="true"></i>
+</div>
+<div class="class-history-panel bg-light border-success">
+<div class="class-history-heading">
+<h4 class="class-history-title m-b-0 c-black text-left text-uppercase">Progressão Aritimética</h4>
+<p class="m-0">
+<small class="text-muted f-12 text-uppercase">
+    <i class="fa fa-calendar" aria-hidden="true"></i> Segunda, 30 de Setembro de 2019 às 19:00
+</small>
+</p>
+</div>
+</div>
+</li>
+
+<li class="class-history-inverted">
+<div class="class-history-badge bg-light border-secondary"><i class="fa fa-map" aria-hidden="true"></i></div>
+<div class="class-history-panel bg-light border-secondary">
+<div class="class-history-heading">
+<h4 class="class-history-title m-b-0 c-black text-left text-uppercase">Trigonometria Inversa</h4>
+<p class="m-0">
+<small class="text-muted f-12 text-uppercase">
+    <i class="fa fa-calendar" aria-hidden="true"></i> Terça, 11 de Setembro de 2018 às 18:00
+</small>
+</p>
+</div>
+</div>
+</li>
+    
+</ul>
+</main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+

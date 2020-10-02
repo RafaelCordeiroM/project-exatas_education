@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>matéria</title>
+
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/small-business.css" rel="stylesheet">
+     <!-- Font Awesome JS -->
+     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+  
+   <!-- Bootstrap core CSS -->
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark  navBack ">
+    <div class="container">
+      <a class="navbar-brand" href="javascript:history.go(-1)" style="color:black;">&#8612;</a>
+      &nbsp;&nbsp;&nbsp;
+
+
+  <div class="container-fluid" style="position:relative;">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+
+            <div class="btn-group" role="group" aria-label="Basic example" style="color:white">
+              <a type="button" data-target="#carouselPage"  data-slide-to="0" class="btn btn-dark btn-option">
+              Conteúdo
+              </a>
+            <a type="button" data-target="#carouselPage"  data-slide-to="1" class="btn btn-dark btn-option" >
+              Simulações
+            </a>
+              <a type="button" data-target="#carouselPage" data-slide-to="2" class="btn btn-dark btn-option">
+                 Videos
+              </a>
+              <a type="button" data-target="#carouselPage" data-slide-to="3" class="btn btn-dark btn-option">
+                 Exercicios
+              </a>
+            </div>
+             </div>
+             
+        </div>
+      </div>
+      <style type="text/css">
+          .fieldset {
+  border: 1px solid #cacaca;
+  padding: 1.25rem;
+  margin: 1.125rem 0; }
+  .fieldset legend {
+    background: transparent;
+    padding: 0 0.1875rem;
+    margin: 0;
+    margin-left: -0.1875rem; }
+
+    /* Hiding the checkbox, but allowing it to be focused */
+          .badgebox
+          {
+              opacity: 0;
+          }
+
+          .badgebox + .badge
+          {
+              /* Move the check mark away when unchecked */
+              text-indent: -999999px;
+              /* Makes the badge's width stay the same checked and unchecked */
+            width: 27px;
+          }
+
+          .badgebox:focus + .badge
+          {
+              /* Set something to make the badge looks focused */
+              /* This really depends on the application, in my case it was: */
+              
+              /* Adding a light border */
+              box-shadow: inset 0px 0px 5px;
+              /* Taking the difference out of the padding */
+          }
+
+          .badgebox:checked + .badge
+          {
+              /* Move the check mark back when checked */
+            text-indent: 0;
+          }
+      </style>
+      <div style="color:black;">
+        <fieldset class="fieldset">
+        <legend align="center"><h3>
+          Medindo Grandeza Como o Comprimento
+        </h3></legend>
+
+      <div style="color:black;"  class="text-center">
+        
+          <label for="selecionado" class="btn btn-default" style="display:flex">Estudar <input type="checkbox" id="selecionado" class="badgebox"><span class="badge" style="border:1px solid black;">&check;</span></label>
+          <script type="text/javascript">
+            
+            $("#selecionado").change(function() {
+                if ($(this).prop("checked") == true) {
+                  alert("Adicionado aos estudos pendentes");
+                }
+              });
+
+              $("#selecionado").trigger("change");
+
+
+          </script>
+          <script type="text/javascript"></script>
+        
+      </div>
+      </fieldset>
+      </div>
+      
+    </div>  
+
+    
+
+
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+">
+      <div class="">
+      <div class="dropdown">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Classificar
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Mais avaliados</a>
+          <a class="dropdown-item" href="#">Mais visualizados</a>
+        </div>
+      </div>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Procurar">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class='fa fa-search' aria-hidden='true' style='font-size:22px'></i></button>
+    </form>
+    </nav>
+    
+      
+
+
+      <div id="carouselPage" class="carousel slide carousel-fade" style="position:relative;z-index:0;" data-ride="carousel" data-interval="false">
+                      
+        <div class="carousel-inner " >
+          <!-- Formulas-->
+                  <div class="carousel-item active"> 
+                    <!--Material teorico-->
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-12">
+
+
+                              <ul class="list-group">
+                                <a data-toggle="modal" data-target=".bd-example-modal-lg">
+                                  <li class="list-group-item d-flex  align-items-center">
+                                    <div class="image-parent ">
+                                      <img src="img/exatas.jpg" class="img-fluid rounded-circle img-material" >
+                                  </div>    
+                                  <span class="spanName"> 
+                                    Exatas
+                                    <p class="text-muted">Conteúdo de uma forma geral</p>
+                                  </span>
+                                  </li>
+                                  </a>
+                                  
+                              </ul>
+                              <br>
+                              <div class="line"></div>
+                              <br>
+
+                            <ul class="list-group">
+                              <li class="list-group-item d-flex  align-items-center">
+                                <div class="image-parent">
+                                  <img src="img/.jpg" class="img-fluid rounded-circle img-material" >
+                              </div>     
+                              <span class="spanName"> 
+                                
+                                <p class="text-muted"></p>
+                                </span>
+                              </li>
+                              <li class="list-group-item d-flex  align-items-center">
+                                <div class="image-parent">
+                                  <img src="img/.jpg" class="img-fluid rounded-circle img-material" >
+                              </div>     
+                              <span class="spanName"> 
+                                
+                                <p class="text-muted"></p>
+                                </span>
+                              </li>
+
+                              <li class="list-group-item d-flex  align-items-center">
+                                <div class="image-parent">
+                                  <img src="img/.jpg" class="img-fluid rounded-circle img-material" >
+                              </div>     
+                              <span class="spanName"> 
+                                
+                                <p class="text-muted"></p>
+                                </span>
+                              </li>
+
+                              <li class="list-group-item d-flex  align-items-center">
+                                <div class="image-parent">
+                                  <img src="img/.jpg" class="img-fluid rounded-circle img-material" >
+                              </div>     
+                              <span class="spanName"> 
+                                
+                                <p class="text-muted"></p>
+                                </span>
+                              </li>
+
+                              
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+          <!-- /////Material teorico-->
+
+
+                  </div>
+
+                  <div class="carousel-item">
+                      <embed src="content/simulações/simulacao.html" >
+                      </embed>
+                  </div>
+
+
+                  
+                  <div class="carousel-item">
+
+                    <div class="container">
+                            <div class="row">    
+                                <div class="col-md-6 ">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_ANQ-xSIhs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                                            </div>
+                                            
+                                        </div><!-- card image -->
+                                        
+                                         <div class="card-content">
+                                                                
+                                            <button type="button" id="show1" class="btn btn-custom pull-right" aria-label="Left Align">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </button>
+                                        </div><!-- card content -->
+                                        
+                                        <div class="card-reveal card-r1" >
+                                             <button  class="close1 btn btn-outline-dark" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <p>descrição</p>
+                                        </div><!-- card reveal -->
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0ZjyjlHddik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       
+                                            </div>
+                                            
+                                        </div><!-- card image -->           
+                                         <div class="card-content">
+                                                                
+                                            <button type="button" id="show2" class="btn btn-custom pull-right" aria-label="Left Align">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </button>
+                                        </div><!-- card content -->
+                                        
+                                        <div class="card-reveal card-r2" id="">
+                                             <button  class="close1 btn btn-outline-dark" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div><!-- card reveal -->            
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                                <div class="row">    
+                                <div class="col-md-6 ">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/5s8eD0TnKIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                              
+                                            </div>
+                                            
+                                        </div><!-- card image -->
+                                        
+                                         <div class="card-content">
+                                                                
+                                            <button type="button" id="show3" class="btn btn-custom pull-right" aria-label="Left Align">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </button>
+                                        </div><!-- card content -->
+                                        
+                                        <div class="card-reveal card-r3">
+                                             <button  class="close1 btn btn-outline-dark" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div><!-- card reveal -->
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3aKysn3tN8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                              
+                                            </div>
+                                            
+                                        </div><!-- card image -->
+                                        
+                                        <div class="card-content">
+                                                                
+                                            <button type="button" id="show4" class="btn btn-custom pull-right" aria-label="Left Align">
+                                                <i class="fa fa-ellipsis-v"></i>
+                                            </button>
+                                        </div><!-- card content -->
+                                        
+                                        <div class="card-reveal card-r4">
+                                             <button  class="close1 btn btn-outline-dark" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div><!-- card reveal -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                  </div>
+
+                  <!--////////////////////////// function Cards ////////////////////////////////-->
+  <script type="text/javascript">
+    $(function(){
+      //card1
+    $('#show1').on('click',function(){        
+        $('.card-r1').slideToggle('slow');
+    });
+    
+    $('.card-r1 .close1').on('click',function(){
+        $('.card-r1').slideToggle('slow');
+    });
+
+    //card2
+    $('#show2').on('click',function(){        
+        $('.card-r2').slideToggle('slow');
+    });
+    
+    $('.card-r2 .close1').on('click',function(){
+        $('.card-r2').slideToggle('slow');
+    });
+
+
+//card3
+    $('#show3').on('click',function(){        
+        $('.card-r3').slideToggle('slow');
+    });
+    
+    $('.card-r3 .close1').on('click',function(){
+        $('.card-r3').slideToggle('slow');
+    });
+
+
+//card4
+    $('#show4').on('click',function(){        
+        $('.card-r4').slideToggle('slow');
+    });
+    
+    $('.card-r4 .close1').on('click',function(){
+        $('.card-r4').slideToggle('slow');
+    });
+
+
+//card5
+    $('#show5').on('click',function(){        
+        $('.card-r5').slideToggle('slow');
+    });
+    
+    $('.card-r5 .close1').on('click',function(){
+        $('.card-r5').slideToggle('slow');
+    });
+
+
+
+
+
+
+});
+
+  </script>
+
+
+                  <div class="carousel-item">
+                    <style type="text/css">
+                      .alternativas li{
+                        list-style-type: none; 
+                      }
+                      .enunciado{
+
+                      }
+                      .blockQuestao{
+                        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                      }
+                      #contentPop{
+                        min-width: 600px !important;
+                        max-width: 600px !important;
+                      }
+
+                    </style>
+
+                    <nav class="navbar navbar-expand-lg" style="margin:10px;"><div class="col-sm-12 text-center"> <button class="btn btn-outline-dark">Gerar PDF</button></div></nav>
+
+                    <div class="container blockQuestao ">
+
+                      <div class="row " style="border-top:1px solid black;padding-bottom:20px;">
+                        
+                        <div class="col-sm-12 ">
+                          <div class="enunciado">
+                            <br>
+                            <div class="row">
+                                <div class="text-muted col-sm-10" style="border-bottom:1px solid rgb(168, 167, 167);">Questão 67785 - Enem </div>
+                                <div class="col-sm-2"><input type="checkbox"><label>Selecionar</label></div>
+                              </div>
+                          <p><br><br>A tecnologia de comunicação da etiqueta RFID (chamada de etiqueta inteligente) é usada há anos para rastrear gado, vagões de trem, bagagem aérea e carros nos pedágios. Um modelo mais barato dessas etiquetas pode funcionar sem baterias e é constituído por três componentes: um microprocessador de silício; uma bobina de metal, feita de cobre ou alumínio, que é enrolada em um padrão circular; e um encapsulador, que é um material de vidro ou polímero envolvendo o microprocessador e a bobina. Na presença de um campo de radiofrequência gerado pelo leitor, a etiqueta transmite sinais. A distância de leitura é determinada pelo tamanho da bobina e pela potência da onda de rádio emitida pelo leitor.</p>
+                          
+                          <br><br><br>
+                        </div>
+                          <ul class="alternativas">
+                            <li>a)elétrico da onda de rádio agita elétrons.</li>
+                            <li>b)elétrico da onda de rádio cria uma tensão na bobina.</li>
+                            <li>c)magnético da onda de rádio induz corrente na bobina.</li>
+                            <li>d)magnético da onda de rádio aquece os fios da bobina.</li>
+                            <li>e)magnético da onda de rádio diminui a ressonância no interior da bobina.</li>
+                          </ul>
+                          <button class="btn btn-danger pop" id="pop" >Resposta</button>
+
+                          <div id='contentPop'>
+                           <div class='resposta' style='border-bottom:1px solid black '>
+                            Alternativa C
+                          </div>
+                          <div class='comentario'>
+                            rsdvash fhafuoa fadshfs sh sdha shddia sdjs asdms sdamsd ss s sjs djsnd snhd dhsnds 
+                          </div>
+                        </div>
+
+                          <br>
+                        </div>
+                      </div>
+
+
+                       <div class="row " style="border-top:1px solid black; padding-bottom:20px;">
+                        <div class="col-sm-12 ">
+                          <div class="enunciado">
+                              <br>
+
+                              <div class="row">
+                                  <div class="text-muted col-sm-10" style="border-bottom:1px solid rgb(168, 167, 167);">Questão 5745 - Enem </div>
+                                  <div class="col-sm-2"><input type="checkbox"><label>Selecionar</label></div>
+                                </div>
+
+                          <p><br><br>A tecnologia de comunicação da etiqueta RFID (chamada de etiqueta inteligente) é usada há anos para rastrear gado, vagões de trem, bagagem aérea e carros nos pedágios. Um modelo mais barato dessas etiquetas pode funcionar sem baterias e é constituído por três componentes: um microprocessador de silício; uma bobina de metal, feita de cobre ou alumínio, que é enrolada em um padrão circular; e um encapsulador, que é um material de vidro ou polímero envolvendo o microprocessador e a bobina. Na presença de um campo de radiofrequência gerado pelo leitor, a etiqueta transmite sinais. A distância de leitura é determinada pelo tamanho da bobina e pela potência da onda de rádio emitida pelo leitor.</p>
+                          <br><br><br>
+                        </div>
+                          <ul class="alternativas">
+                            <li>a)elétrico da onda de rádio agita elétrons.</li>
+                            <li>b)elétrico da onda de rádio cria uma tensão na bobina.</li>
+                            <li>c)magnético da onda de rádio induz corrente na bobina.</li>
+                            <li>d)magnético da onda de rádio aquece os fios da bobina.</li>
+                            <li>e)magnético da onda de rádio diminui a ressonância no interior da bobina.</li>
+
+
+                          </ul>
+                          <button class="btn btn-danger pop" id="pop22" >Resposta</button>
+
+                          <div id='contentPop22'>
+                           <div class='resposta' style='border-bottom:1px solid black '>
+                            Alternativa C
+                          </div>
+                          <div class='comentario'>
+                            rsdvash fhafuoa fadshfs sh sdha shddia sdjs asdms sdamsd ss s sjs djsnd snhd dhsnds 
+                          </div>
+                        </div>
+
+                          <br>
+                        </div>
+                      </div>
+
+
+
+
+
+                    </div>
+                    </div>
+          </div>
+      </div>
+      
+     <style>
+     .popover{
+    max-width: 100%; /* Max Width of the popover (depending on the container!) */
+}
+     
+     </style>
+ <!--///////////////////////////////////////////////////////////////////////////////////////////// Barra Direita //////////////////////////////////-->
+ <div class="barraDireita text-center" style="z-index:1;">
+         
+            
+    <br> 
+    <span  id="pop3"data-container="body" data-toggle="popover" data-placement="left" data-content="
+    <span href='#' class='close' onclick='ClosePop3()' data-dismiss='popover'>&times;</span>
+    <br>
+    <div calss='container'>
+        <div class='row'>
+                <div class='col-sm-12 text-center'>
+                  <a href='../user/index.html'>
+                    <img src='../perfil.jpg' class='rounded-circle' style='box-shadow:10px 0px 50px rgb(190, 189, 189);'width='80px'>
+                    <h6>Elon Musk</h6>
+                </div>
+        </div>
+        <div class='row'>
+          <br>
+            <div class='col-sm-12 text-center'>
+            <b>Email:</b> gahdnsudn@gmail.com
+            </div>
+        </div>
+</div>
+    
+    ">
+      <i class="fa fa-user" style="font-size:30px"></i>
+     </span>
+
+      <br>
+      <br> 
+    <span id="pop2" data-container="body" data-toggle="popover" data-title="" data-placement="left" data-content="
+    <span href='#' class='close' onclick='ClosePop2()' data-dismiss='popover'>&times;</span>
+    <br>
+    <div class='form-group input-group'>
+        <span class='input-group-addon'>
+          <i class='fa fa-search' aria-hidden='true' style='font-size:27px'></i>
+        </span>
+        &nbsp;
+       <input name='pesquisar'  placeholder='Pesquisar' type='text' class='form-control'>
+      </div>
+
+      
+      ">
+        <i class="fa fa-search " style="font-size:30px"></i>
+      </span>
+      <br>
+      <br> 
+      
+           <span  id="pop1" data-container="body" data-toggle="popover" data-placement="left" data-content="
+
+           <object width='320px' style='min-height:270px;max-height:300px;' data='calculadora.htm'></object>
+           <span href='#' class='close' onclick='ClosePop1()' data-dismiss='popover'>&times;</span>
+           ">
+            <i class="fa fa-calculator" style="font-size:30px"></i>
+            
+           </span>
+    
+<script>
+
+
+ClosePop1 = function () {
+$('#pop1').popover('hide');
+}
+ClosePop2 = function () {
+$('#pop2').popover('hide');
+}
+ClosePop3 = function () {
+$('#pop3').popover('hide');
+}
+
+
+
+
+</script>
+</div>
+
+
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Exatas 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+    $("[data-toggle=popover]").popover({
+    html : true,
+    content: function() {
+        var content = $(this).attr("data-popover-content");
+        return $(content).children(".popover-body").html();
+    }
+});
+</script>
+
+  
+
+  <script type="text/javascript">
+    
+   $(document).ready(function() {
+
+    $('#contentPop').hide();
+
+    // Initialize our popover
+    //
+    $('#pop').popover({
+        content: $('#contentPop'), // set the content to be the 'blah' div
+        placement: 'right',
+        html: true
+    });
+    // The popover contents will not be set until the popover is shown.  Since we don't 
+    // want to see the popover when the page loads, we will show it then hide it.
+    //
+    $('#pop').popover('show');
+    $('#pop').popover('hide');
+
+    // Now that the popover's content is the 'blah' dive we can make it visisble again.
+    //
+    $('#contentPop').show();
+
+
+});
+
+  </script>
+   <script type="text/javascript">
+    
+    
+   $(document).ready(function() {
+
+    $('#contentPop22').hide();
+
+    // Initialize our popover
+    //
+    $('#pop22').popover({
+        content: $('#contentPop22'), // set the content to be the 'blah' div
+        placement: 'right',
+        html: true
+    });
+    // The popover contents will not be set until the popover is shown.  Since we don't 
+    // want to see the popover when the page loads, we will show it then hide it.
+    //
+    $('#pop22').popover('show');
+    $('#pop22').popover('hide');
+
+    // Now that the popover's content is the 'blah' dive we can make it visisble again.
+    //
+    $('#contentPop22').show();
+
+
+});
+
+  </script>
+
+</body>
+
+</html>
+
+<!--Modais-->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-full">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Exatas</h5>
+              <button  class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="jumbotron">
+                <h4 class="">O Sistema Internacional de Unidade</h4>
+              </div>  
+              <object data="content/pdf/pdf1.pdf" class="objectConfig" type="application/pdf"></object>
+              <div class="jumbotron">
+                <h4 class="">Medindo Unidades</h4>
+              </div>  
+              <object data="content/pdf/pdf2.pdf" class="objectConfig" type="application/pdf"></object>
+              <div class="jumbotron">
+                <h4 class="">Medindo Grandezas</h4>
+              </div>  
+              <object data="content/pdf/pdf3.pdf" class="objectConfig" type="application/pdf"></object>
+              <div class="jumbotron">
+                <h4 class="">Dígitos Significativos e Casas Descimais</h4>
+              </div>  
+              <object data="content/pdf/pdf4.pdf" class="objectConfig" type="application/pdf"></object>
+              <div class="jumbotron">
+                <h4 class="">Comprimento</h4>
+              </div>  
+              <object data="content/pdf/pdf5.pdf" class="objectConfig" type="application/pdf"></object>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+      </div>
+    </div>
+  </div>
+  

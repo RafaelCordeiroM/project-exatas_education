@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Química</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+      
+      #navbarSupportedContent a{
+        transition-duration: 0.5s;
+      }
+      #navbarSupportedContent a:hover{
+      border-bottom: 1px 1px black;      
+      }
+
+    </style>
+    <style>
+      #sidebar{
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+      }
+      .imgLogo{
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+      }
+      
+      </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav class="fixed" id="sidebar">
+            <div class="sidebar-header text-center">
+                <img class="rounded-circle imgLogo" src="assets/img/logoQuimica.png" width="150px" height="150px">
+            </div>
+
+            <ul class="list-unstyled components text-center">
+                <p text-align="center" style="font-family:sans-serif;"><h4>Química</h4></p>
+
+            </ul>
+            <div class="navLeft">
+            <ul class="list-unstyled text-center">
+                <li>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary btn-lg btn-block historia" data-toggle="modal" data-target="#historiaModal">
+                        História
+                         </button>
+                       </br></br>
+                            <!-- Modal -->
+            <div class="modal fade " id="historiaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">historia</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                              <div class="modal-body">
+                                <iframe src="https://pt.wikipedia.org/wiki/Qu%C3%ADmica" style="width:100%; height:100vh"></iframe>
+                                
+                              </div>
+
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">fechar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="dropdown">
+                          <button class="btn btn-secondary btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           tópicos
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class=" dropdown-item " href="#">Química</a>
+                            <a class=" dropdown-item " href="#quimicaOrganica">Química orgânica</a>
+
+                          </div>
+                        </div>                
+                </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Page Content  -->
+        
+
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                                 <li class="nav-item ">
+                                <a class="nav-link" href="../inicio/index.html">Início</a>
+                            </li>
+                            <li class="nav-item disable">
+                                <a class="nav-link" href="../matematica/index.html">Matemática</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disable" href="../engenharia/index.html">Engenharia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disable" href="../informatica/index.html">informática</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../fisica/index.html">Física</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../quimica/index.html">Química</a>
+                            </li>
+
+                            <li class="nav-item disable">
+                                <a class="nav-link" href="../biologia/index.html">Biologia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disable" href="../astronomia/index.html">Astronomia</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link disable" href="../bioengenharia/index.html">Bioengenharia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" data-target="#carouselPage"  data-slide-to="0"class="btnFormulas btn btn-secondary " id="effect">
+                          Conteúdo
+                        </button>
+                        <button type="button" data-target="#carouselPage"  data-slide-to="1"class="btnTabela btn btn-danger " id="effect">
+                          Tabela periódica
+                        </button>
+                          <button type="button" data-target="#carouselPage" data-slide-to="2" class="btnAutores btn btn-dark">
+                             Autores
+                          </button>
+                        </div>
+                         </div>
+                         
+                    </div>
+                  </div>
+
+                  <div id="carouselPage" class="carousel slide"  data-ride="carousel" data-interval="false">
+                      
+                      <div class="carousel-inner">
+                        <!-- Formulas-->
+                        <div class="carousel-item active">
+                           
+                          <div>
+                            <section class="conteudo bg-secondary">
+                              
+                              <div class="container">
+                                <h1 style="color:white;">Química</h1>
+                                <div class="line"></div>
+                                   <div class="row">
+
+                                    <div class="col-sm-4">
+
+
+                                       <a  data-toggle="modal" data-target="#modal1">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img1.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Visão macroscópica da matéria: aspectos gerais sobre a
+                                          história da Química moderna</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                     <div class="col-sm-4">
+                                       <a  data-toggle="modal" data-target="#modal2">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img2.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Linguagem química</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+                                     <div class="col-sm-4">
+                                       <a data-toggle="modal" data-target="#modal3">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img3.png" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Reações químicas: aspectos relevantes</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+
+                                   </div>
+                                   <!--Linha 2-->
+                                    <div class="row">
+
+                                    <div class="col-sm-4">
+
+
+                                       <a class="" data-toggle="modal" data-target="#modal4">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img4.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Ligação Química</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                     <div class="col-sm-4">
+                                       <a data-toggle="modal" data-target="#modal5">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img5.png" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Os tipos de ligações químicas do ponto de vista energético e estrutural</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+                                     <div class="col-sm-4">
+                                       <a data-toggle="modal" data-target="#modal6">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img6.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Energia elétrica e reações químicas</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+
+                                   </div>
+                                    <!--Linha 3-->
+                                    <div class="row">
+
+                                    <div class="col-sm-4">
+
+
+                                       <a class="" data-toggle="modal" data-target="#modal7">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img7.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">A Química da biosfera</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                   </div>
+
+                               </div>
+                           </section>
+                           <section class="bg-dark" id="quimicaOrganica">
+
+                              <h1 style="color:white;">Química Orgânica</h1>
+                                <div class="line"></div>
+                                <div class="container">
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+
+
+                                       <a class="" data-toggle="modal" data-target="#modal">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img." alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Água</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                           </section>
+                       </div>
+                   </div>
+                   <!-- tabela periodica-->
+                   <div class="carousel-item">
+                           
+                          <div>
+                            <section class="tabela periodica bg-danger">
+                              
+                              <div class="container">
+                                   <div class="row">
+                                    <div class="col-sm-12">
+                                      <a href="javascript:history.go(-1)">&#8592;voltar</a>
+                                        <object data="assets/paginas/tabela-periodica/tabela-periodica.html" frameborder="0"  vspace="100%" class="iframeC"></object>
+                                      
+                                    </div>
+                                   </div>
+                               </div>
+                           </section>
+                       </div>
+                   </div>
+                   <!-- conteudo-->
+                   <div class="carousel-item">
+                           
+                          <div>
+                            <section class="autores bg-dark">
+                              
+                              <div class="container">
+                                   <div class="row">
+                                              <div class="container">
+                <!--row1-->
+                <div class="row">
+                  
+                  <div class="col-sm-4 text-center">
+                    <div class="autoresImg ">
+                      <img class="mx-auto rounded-corners img-responsive" src="img/quimica/autores/paracelso.jpg" width="200" height="225"alt="">
+                      <h4>Paracelso (1493-1541)</h4><br>
+                      <p >
+
+                        O suíço Philippus Aureolus Theophrastus Bombastus Von Hohenheim, mais conhecido como Paracelso, era um conhecedor multifacetado. Ele estudou e escreveu sobre medicina e química, mas também sobre misticismo e filosofia. Foram as suas contribuições que iniciaram o processo de transformação da alquimia em química moderna.
+
+
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <div class="autoresImg ">
+                      <img class="mx-auto rounded-corners img-responsive" src="img/quimica/autores/jan.jpg" width="200" height="235"alt="">
+                      <h4>Jan Baptist Van Helmont (1579-1644)</h4>
+                      <p > 
+
+                       Além de químico e bioquímico, o belga Van Helmont também era médico e fisiologista. Assim como Paracelso, estudou a magia e a ciência tradicional, mas, diferente do seu anterior, valorizou muito mais o trabalho experimental e quantitativo do que a filosofia.
+
+
+                    </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <div class="autoresImg ">
+                      <img class="mx-auto rounded-corners img-responsive" src="img/quimica/autores/robert.jpg" width="200" height="225"alt="">
+                      <h4>Robert Boyle (1627-1691)</h4>
+                      <p >
+
+                          Com formação tradicional, o inglês, filho de Conde, deixou a filosofia para se dedicar à experimentação, ao construir um laboratório na sua casa em Sailbridge. Em 1964, chegou a Oxford, aonde produziu a maioria de seus trabalhos, dedicando-se também à física. Dando continuidade aos estudos de Helmont, publicou sobre a dilatação dos gases em The Septical Chymist(1661), diferenciando pela primeira vez a alquimia da química, ao definir, ainda que vagamente, os modernos conceitos de átomo e molécula.
+
+
+                            </p>
+                    </div>
+                  </div>
+                   
+                </div>
+                <!--row2-->
+                <div class="row">
+                  
+                  <div class="col-sm-4 text-center">
+                    <div class="autoresImg ">
+                      <img class="mx-auto rounded-corners img-responsive" src="img/quimica/autores/georg.jpg" width="200" height="225"alt="">
+                      <h4>Georg Ernst Stahl (1659-1734)</h4>
+                      <p >
+
+                            Médico e químico alemão, Stahl ficou conhecido principalmente pela criação da Teoria do Flogismo, publicada no livro "Os Fundamentos da Química". Baseando-se nos trabalhos de Johann Joachim Becher, ele chegou à conclusão de que quando um mineral ou metal fosse muito aquecido, ele entrava em combustão, liberava uma substância chamada de flogisto, sofria corrosão e perdia sua capacidade de combustão.
+
+
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <div class="autoresImg ">
+                      <img class="mx-auto rounded-corners img-responsive" src="img/quimica/autores/antoine.jpg" width="200" height="225"alt="">
+                      <h4>Antoine Lavoisier (1743-1794)</h4>
+                      <p >
+
+                          A famosa frase “na natureza nada se cria, nada se perde, tudo se transforma” é a definição do químico francês para sua teoria de conservação da matéria.
+
+                            Ele descobriu que a combustão de uma matéria só acontece com o oxigênio (elemento que identificou e classificou), derrubando a teoria do alemão Stahl. Junto com Claude-Louis Berthollet, publicou o estudo "Método de Nomenclatura Química", propondo uma reforma na linguagem da química. Desvendou a composição química da água: dois átomos de hidrogênio e um de oxigênio.
+
+
+                            </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <div class="autoresImg ">
+                      <img class="mx-auto rounded-corners img-responsive" src="img/quimica/autores/john.jpg" width="200" height="225"alt="">
+                      <h4>John Dalton (1766-1844)</h4>
+                      <p >
+
+                              Físico e químico inglês, criou da teoria atômica . Ficou conhecido também pela descoberta do daltonismo – anomalia da visão de cores-, doença que ele próprio tinha.
+
+                              Com a publicação "Absorção de gases pela água e outros líquidos", estabeleceu o princípio básico de sua teoria: a pressão total de uma mistura de gases é igual à soma das pressões parciais dos gases que a constituem. A pressão parcial, aí, seria a pressão de cada gás individualmente.
+
+                       </p>
+                    </div>
+                  </div>
+                   
+                </div>
+                <!--row3-->
+                <div class="row">
+                  
+                  <div class="col-sm-4 text-center">
+                    <div class="autoresImg ">
+                      <img class="mx-auto rounded-corners img-responsive" src="img/quimica/autores/dimitri.jpg" width="200" height="225"alt="">
+                      <h4>Dimitri Mendeleev (1834-1907)</h4>
+                      <p >
+
+                            O químico russo tinha uma personalidade muito forte, por isso só conseguia trabalhar sozinho. Criou um laboratório improvisado em seu apartamento, aonde fez descobertas importantes sobre estruturas atômicas, valência (capacidade de um átomo de se combinar com outros) e propriedades dos gases.
+                     </p>
+                    </div>
+                  </div>
+                  
+                   
+                </div>
+          </div> 
+                                   </div>
+                               </div>
+                           </section>
+                       </div>
+                   </div>
+               </div>
+           </div>
+                               
+
+
+
+            
+            <div class="line"></div>
+
+            <div class="line"></div>
+
+        </div>
+    </div>
+                            
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-sm-4 text-center">
+            <button class="btn btn-secondary">&sum; Química</button>
+        </div>
+        <div class="col-sm-4 text-center">
+            <button class="btn btn-secondary">&sum; Química</button>
+        </div>
+        <div class="col-sm-4 text-center">
+            <button class="btn btn-secondary">&sum; Química</button>
+        </div>
+        </div>
+        <div class="row" style="margin-top:5px ">
+        <div class="col-sm-4 text-center">
+            <button class="btn btn-secondary">&sum; Química</button>
+        </div>
+        <div class="col-sm-4 text-center">
+            <button class="btn btn-secondary">&sum; Química</button>
+        </div>
+        <div class="col-sm-4 text-center">
+            <button class="btn btn-secondary">&sum; Química</button>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////// Barra Direita //////////////////////////////////-->
+      <div class="barraDireita text-center">
+         
+            
+        <br> 
+        <span  id="pop3"data-container="body" data-toggle="popover" data-placement="left" data-content="
+        <span href='#' class='close' onclick='ClosePop3()' data-dismiss='popover'>&times;</span>
+        <br>
+        <div calss='container'>
+            <div class='row'>
+                    <div class='col-sm-12 text-center'>
+                      <a href='../user/index.html'>
+                        <img src='../perfil.jpg' class='rounded-circle' style='box-shadow:10px 0px 50px rgb(190, 189, 189);'width='80px'>
+                        <h6>Elon Musk</h6>
+                    </div>
+            </div>
+            <div class='row'>
+              <br>
+                <div class='col-sm-12 text-center'>
+                <b>Email:</b> gahdnsudn@gmail.com
+                </div>
+            </div>
+    </div>
+        
+        ">
+          <i class="fa fa-user" style="font-size:30px"></i>
+         </span>
+
+          <br>
+          <br> 
+        <span id="pop2" data-container="body" data-toggle="popover" data-title="" data-placement="left" data-content="
+        <span href='#' class='close' onclick='ClosePop2()' data-dismiss='popover'>&times;</span>
+        <br>
+        <div class='form-group input-group'>
+            <span class='input-group-addon'>
+              <i class='fa fa-search' aria-hidden='true' style='font-size:27px'></i>
+            </span>
+            &nbsp;
+           <input name='pesquisar'  placeholder='Pesquisar' type='text' class='form-control'>
+          </div>
+
+          
+          ">
+            <i class="fa fa-search " style="font-size:30px"></i>
+          </span>
+          <br>
+          <br> 
+          
+               <span  id="pop1" data-container="body" data-toggle="popover" data-placement="left" data-content="
+
+               <object width='330px' height='270px'data='calculadora.htm'></object>
+               <span href='#' class='close' onclick='ClosePop1()' data-dismiss='popover'>&times;</span>
+               
+
+               ">
+                <i class="fa fa-calculator" style="font-size:30px"></i>
+                
+               </span>
+        
+<script>
+
+
+ClosePop1 = function () {
+$('#pop1').popover('hide');
+}
+ClosePop2 = function () {
+$('#pop2').popover('hide');
+}
+ClosePop3 = function () {
+$('#pop3').popover('hide');
+}
+
+
+
+
+</script>
+</div>
+
+
+
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Exatas</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+     <!-- jQuery CDN - Slim version (=without AJAX) -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- Popper.JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+ 
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+         $("[data-toggle=popover]").popover({
+         html : true,
+         content: function() {
+             var content = $(this).attr("data-popover-content");
+             return $(content).children(".popover-body").html();
+         }
+     });
+     </script>
+</body>
+
+</html>
+
+
+<style type="text/css">
+      .containerCard{
+
+      padding:20px;
+      margin:5px;
+      background-color:#ff6d3b;  
+      box-shadow:1px 0px 40px rgb(190, 189, 189);   
+      transition-duration:0.5s; 
+      border-left:5px solid white; 
+
+    }
+    .containerCard:hover{
+      box-shadow:1px 0px 10px black;
+      border-left:5px solid black; 
+      
+    }
+    .symbols{
+      position:relative;
+      right:0px;
+      bottom:0px;   
+    }
+</style>
+
+<!-- Modais-->
+
+  
+  <!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Visão macroscópica da matéria: aspectos gerais sobre a história da Química moderna</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12">
+                  <a href="paginas/pag1/index.html">
+                     <div class="containerCard">
+                          O caminho para o Modelo Atômico de Dalton – o átomo indivisível
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag2/index.html">
+                     <div class="containerCard">
+                          A mudança do modelo atômico indivisível para o de átomo divisível
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag3/index.html">
+                     <div class="containerCard">
+                          A descoberta da radioatividade e sua influência sobre o desenvolvimento dos modelos atômicos
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag4/index.html">
+                     <div class="containerCard">
+                          A evolução do Modelo do Átomo Divisível: O Modelo Nuclear de Rutherford
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Linguagem química</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12">
+                  <a href="paginas/pag5/index.html">
+                     <div class="containerCard">
+                          Linguagem
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag6/index.html">
+                     <div class="containerCard">
+                          Os símbolos químicos
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag7/index.html">
+                     <div class="containerCard">
+                          O nome dos elementos
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag8/index.html">
+                     <div class="containerCard">
+                          Fórmulas químicas
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag9/index.html">
+                     <div class="containerCard">
+                          As equações químicas
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>        <div class="col-sm-12">
+                  <a href="paginas/pag10/index.html">
+                     <div class="containerCard">
+                          Nomenclaturas dos compostos químicos
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>        
+          <div class="col-sm-12">
+                  <a href="paginas/pag11/index.html">
+                     <div class="containerCard">
+                          Nomenclaturas da Iupac para compostos inorgânicos
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>        
+          <div class="col-sm-12">
+                  <a href="paginas/pag12/index.html">
+                     <div class="containerCard">
+                          Nomenclaturas dos compostos orgânicos
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reações químicas: aspectos relevantes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12">
+                  <a href="paginas/pag13/index.html">
+                     <div class="containerCard">
+                          As transformações
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag14/index.html">
+                     <div class="containerCard">
+                          Tipos de reações químicas
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag15/index.html">
+                     <div class="containerCard">
+                         Reação química em solução aquosa
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag16/index.html">
+                     <div class="containerCard">
+                          Estequiometria e balanceamento das
+equações das reações químicas
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag17/index.html">
+                     <div class="containerCard">
+                          Por que ocorrem as reações químicas?
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>        <div class="col-sm-12">
+                  <a href="paginas/pag18/index.html">
+                     <div class="containerCard">
+                          Energia e suas relações com as
+mudanças químicas
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>        
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ligação Química</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12">
+                  <a href="paginas/pag19/index.html">
+                     <div class="containerCard">
+                          Evolução histórica do conceito
+de ligação química
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag20/index.html">
+                     <div class="containerCard">
+                          A ligação química no contexto
+do átomo divisível
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag21/index.html">
+                     <div class="containerCard">
+                         Ligação química: conceito e tipos
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag22/index.html">
+                     <div class="containerCard">
+                          Ligação covalente em entidades isoladas
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag23/index.html">
+                     <div class="containerCard">
+                          Obedecer, ou não, à Regra do Octeto?
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Os tipos de ligações químicas do ponto de vista energético e estrutural</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12">
+                  <a href="paginas/pag24/index.html">
+                     <div class="containerCard">
+                          Aspectos básicos da descrição
+probabilística do átomo
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag25/index.html">
+                     <div class="containerCard">
+                          Os tipos de ligações químicas do ponto de vista
+energético e estrutural
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag26/index.html">
+                     <div class="containerCard">
+                         A descrição da ligação covalente pela
+Teoria da Ligação de Valência (TLV)
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag27/index.html">
+                     <div class="containerCard">
+                          A descrição da ligação covalente em molécula
+isolada pela Teoria do Orbital Molecular (TOM)
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag28/index.html">
+                     <div class="containerCard">
+                          Ligação metálica – aspectos
+estruturais e energéticos
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>        
+          <div class="col-sm-12">
+                  <a href="paginas/pag29/index.html">
+                     <div class="containerCard">
+                          Ligação iônica
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>  
+          <div class="col-sm-12">
+                  <a href="paginas/pag30/index.html">
+                     <div class="containerCard">
+                         Ligação intermolecular: descrição de alguns tipos (dispersão de London e ligação hidrogênio) e energética de algumas delas. O caso das propriedades da água
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>  
+          <div class="col-sm-12">
+                  <a href="paginas/pag31/index.html">
+                     <div class="containerCard">
+                          A ligação química em substâncias reais
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>  
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Energia elétrica e reações químicas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12">
+                  <a href="paginas/pag32/index.html">
+                     <div class="containerCard">
+                         Reações de oxirredução (redox):
+a Química e a eletricidade
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag33/index.html">
+                     <div class="containerCard">
+                          Células galvânicas (pilhas e baterias)
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag34/index.html">
+                     <div class="containerCard">
+                         Espontaneidade de reações redox
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag35/index.html">
+                     <div class="containerCard">
+                         Eletrólise
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag36/index.html">
+                     <div class="containerCard">
+                          Corrosão
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>      
+          <div class="col-sm-12">
+                  <a href="paginas/pag37/index.html">
+                     <div class="containerCard">
+                          Lista de abreviações
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal 7 -->
+<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">A Química da biosfera</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12">
+                  <a href="paginas/pag38/index.html">
+                     <div class="containerCard">
+                         Atmosfera – Importância da qualidade do
+ar para a manutenção da vida no planeta
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag39/index.html">
+                     <div class="containerCard">
+                          A hidrosfera – “Água”, que líquido é esse?
+Por que devemos cuidar dela?
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag40/index.html">
+                     <div class="containerCard">
+                        A química da parte sólida da Terra
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag41/index.html">
+                     <div class="containerCard">
+                         Poluentes do solo
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12">
+                  <a href="paginas/pag42/index.html">
+                     <div class="containerCard">
+                          A natureza como fonte de materiais
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>      
+          <div class="col-sm-12">
+                  <a href="paginas/pag43/index.html">
+                     <div class="containerCard">
+                          Relevância da Química para uma
+sociedade sustentável
+                      
+<br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+        
+                      </div>
+                  </a>
+          </div>        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

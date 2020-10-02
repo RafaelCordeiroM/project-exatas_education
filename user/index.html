@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>User</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/small-business.css" rel="stylesheet">
+     <!-- Font Awesome JS -->
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    
+.hjd{
+  margin-bottom: 10px !important;
+background:#F8FAF5 !important;
+border: 1px solid#C3D1A3 !important;
+padding: 5px !important;
+list-style: none !important;
+}
+.qts{
+
+
+ border:2px solid transparent;
+ -webkit-border-radius:4px;
+ -moz-border-radius:4px;
+ border-radius:4px;
+ overflow:hidden;
+ margin-bottom:3px
+
+
+}
+.qts:hover {
+ border-color:#bfbfbf
+}
+  </style>
+
+
+</head>
+<!-- Modal -->
+<div class="modal fade modal2" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position:absolute;z-index:999999; ">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Simulado Velocidade Média</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form>
+        <br>
+       (Fuvest) Após chover na cidade de São Paulo, as águas da chuva descerão o rio Tietê até o rio Paraná, percorrendo cerca de 1.000km. Sendo de 4km/h a velocidade média das águas, o percurso mencionado será cumprido pelas águas da chuva em aproximadamente:
+       <br><br>
+       <div class="hjd">
+  <li class="qts"><input type="radio" name="alternativa" value="1" >30 dias </li>
+  <li class="qts"><input type="radio" name="alternativa" value="2">10 dias </li>
+  <li class="qts"><input type="radio" name="alternativa" value="3">25 dias</li> 
+  <li class="qts"><input type="radio" name="alternativa" value="4">2 dias </li>
+  <li class="qts"><input type="radio" name="alternativa" value="5">4 dias</li> 
+      </div>
+
+
+<div style="border-top:1px solid black"></div>
+<br>
+(UEL) Um carro percorreu a metade de uma estrada viajando a 30km/h e a outra metade da estrada a 60km/h. Sua velocidade média no percurso total foi, em km/h, de
+<br><br>
+
+  <div class="hjd">
+ <li class="qts"> <input type="radio" name="alternativa1" value="1">60</li> 
+ <li class="qts"> <input type="radio" name="alternativa1" value="2">54</li> 
+ <li class="qts"> <input type="radio" name="alternativa1" value="3">48</li> 
+ <li class="qts"> <input type="radio" name="alternativa1" value="4">40</li> 
+ <li class="qts"> <input type="radio" name="alternativa1" value="5">30</li>
+  </div>
+
+
+
+<div style="border-top:1px solid black"></div>
+<br>
+Ao cobrar uma falta em um jogo de futebol, um jogador imprime à bola uma velocidade de 43,2 km/h. Sabendo que a bola gasta 3 s até atingir as redes, determine a distância percorrida.
+<br><br>
+
+<div class="hjd">
+ <li class="qts"> <input type="radio" name="alternativa2" value="1">36 m</li>
+ <li class="qts"> <input type="radio" name="alternativa2" value="2">48 m</li>
+ <li class="qts"> <input type="radio" name="alternativa2" value="3">52 m</li>
+ <li class="qts"> <input type="radio" name="alternativa2" value="4">75 m</li>
+ <li class="qts"> <input type="radio" name="alternativa2" value="5">28 m</li>
+</div>
+
+
+<div style="border-top:1px solid black"></div>
+<br>
+Um garoto caminha a uma taxa constante de 100 passos por minuto. Sabendo que o seu passo médio tem aproximadamente 50 cm, determine o tempo gasto e o número de passos dados para que ele percorra uma distância de 3 km.
+<br><br>
+
+<div class="hjd">
+ <li class="qts"> <input type="radio" name="alternativa3" value="1">45 min e 5000 passos </li>
+ <li class="qts"> <input type="radio" name="alternativa3" value="2">85 min e 8000 passos</li> 
+ <li class="qts"> <input type="radio" name="alternativa3" value="3">50 min e 2000 passos </li>
+ <li class="qts"> <input type="radio" name="alternativa3" value="4">48 min e 1500 passos </li>
+ <li class="qts"> <input type="radio" name="alternativa3" value="5">60 min e 6000 passos </li>
+</div>
+
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-danger" onclick="simulado()" value="Concluir">
+  </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function simulado(){
+  alert("Simulado concluído");
+}
+</script>
+<body>
+   
+       
+
+
+  <!-- Navigation -->
+  <nav class=" navbar-dark navBack fixed-top">
+
+      <div class="row">
+        <div class="col-sm-3">
+          &nbsp;&nbsp;
+          <a class="navbar-brand"  href="javascript:history.go(-1)">&#8612;</a>
+        </div>
+        <div class="col-sm-1 text-right">
+          <div class="blockUser">
+          <img src="../perfil.jpg" class="rounded-circle" width="100px" height="100px" style="background-color:white;box-shadow: 1px 0 40px #5B5A5A ">
+        </div>
+      </div>
+      <div class="col-sm-3 text-right" style="margin-left:20px ">
+          <a class="navbar-brand" href="#">Elon Musk</a>
+          <a class="navbar-brand" href="#"><b>525079</b></a>
+        </div>
+      </div>
+    </nav>
+    
+      
+        <!-- Indicação -->
+
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+            <nav class="navbar navbar-expand-lg  indicacao">
+                <div class="container-fluid">
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                                 <li class="nav-item ">
+                                <a class="nav-link" href="../inicio/index.html">Início</a>
+                            </li>
+                            <li class="nav-item disable">
+                                <a class="nav-link" href="../matematica/index.html">Matemática</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disable" href="../engenharia/index.html">Engenharia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disable" href="../informatica/index.html">informática</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../fisica/index.html">Física</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../quimica/index.html">Química</a>
+                            </li>
+
+                            <li class="nav-item disable">
+                                <a class="nav-link" href="../biologia/index.html">Biologia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disable" href="../astronomia/index.html">Astronomia</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link disable" href="../bioengenharia/index.html">Bioengenharia</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+<div class="wrapper">
+<!-- Paginas Carousel-->
+  
+    <div class="container-fluid pages">
+      <div id="carouselPage" class="carousel slide carousel-fade"  data-ride="carousel" data-interval="false">
+                      
+        <div class="carousel-inner">
+                  <!--Perfil 0-->
+                  <div class="carousel-item"> 
+                      <div class="container">
+                        <h1>Perfil</h1>
+                
+                        <div class="container" style="border:1px solid #C8C5C5;">
+                          <div class="container" style=" padding:10px; ">
+
+
+                        <div class="row rowData">
+                          <div class="col-sm-2 ">
+                            Nome:
+                          </div>
+                        <div class="col-sm-8">
+                            <b>Elon Reeve Musk </b>
+                          </div>
+                            <div class="col-sm-2 text-right">
+                            <button class="btn"><h5><b>&#9998;</b></h5></button>
+                          </div>
+                        </div>
+
+
+                          <div class="row rowData">
+                          <div class="col-sm-2 ">
+                            Email:
+                          </div>
+                        <div class="col-sm-8">
+                            <b>elon78rfenssa@gmail.com</b>
+                          </div>
+                            <div class="col-sm-2 text-right">
+                            <button class="btn"><h5><b>&#9998;</b></h5></button>
+                          </div>
+                        </div>
+
+
+                        <div class="row rowData">
+                          <div class="col-sm-2 ">
+                            Data de Nascimento:
+                          </div>
+                        <div class="col-sm-8">
+                            <b>10/07/1997</b>
+                          </div>
+                            <div class="col-sm-2 text-right">
+                            <button class="btn"><h5><b>&#9998;</b></h5></button>
+                          </div>
+
+                        </div>
+                     
+                    
+
+
+                        <div class="row rowData">
+                          <div class="col-sm-2 ">
+                            Status:
+                          </div>
+                        <div class="col-sm-8">
+                            <b>Professor(a)</b>
+                          </div>
+                            <div class="col-sm-2 text-right">
+                            <button class="btn"><h5><b>&#9998;</b></h5></button>
+                          </div>
+                        </div>
+
+
+                        <div class="row rowData">
+                          <div class="col-sm-2 ">
+                            Gênero:
+                          </div>
+                        <div class="col-sm-8">
+                            <b>Masculino</b>
+                          </div>
+                            <div class="col-sm-2 text-right">
+                            <button class="btn"><h5><b>&#9998;</b></h5></button>
+                          </div>
+                        </div>
+
+
+
+                        <div class="row rowData">
+                          <div class="col-sm-2 ">
+                            CPF:
+                          </div>
+                        <div class="col-sm-8">
+                            <b>5985612542-61</b>
+                          </div>
+                            <div class="col-sm-2 text-right">
+                            <button class="btn"><h5><b>&#9998;</b></h5></button>
+                          </div>
+                        </div>
+
+
+
+                        </div>
+                         </div>
+                      </div>
+                  </div>
+                  <!--Estudos 1-->
+                  <div class="carousel-item active">
+                   <div class="container">
+                        <h1>Estudos</h1>
+                
+                        <div class="container" style="border:1px solid #C8C5C5;">
+                          <div class="container" style=" padding:10px; ">
+                         
+                            <div class="row">
+
+                                    <div class="col-sm-4">
+                                       
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="../quimica/assets/img/cards/img1.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Visão macroscópica da matéria: aspectos gerais sobre a
+                                          história da Química moderna</h5>
+                                            <p class="card-text"><button class="btn btn-primary">Continuar</button></p>
+                                            </div>
+                                            </div>
+                                       
+                                    </div>
+
+                                     <div class="col-sm-4">
+                                       
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                        <img class="card-img-top" src="../quimica/assets/img/cards/img2.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Linguagem química</h5>
+                                            <p class="card-text"><button class="btn btn-primary">Continuar</button></p>
+                                            </div>
+                                            </div>
+                                        
+                                    </div>
+
+
+
+                                  </div>
+                                  <br>
+                                  <div class="row">
+
+                                  <div class="line"></div>
+                                  <div class="col-sm-3"><h3>Notificações</h3></div>
+                                       
+                          
+                                 <div class="list-group" style="width:100% ">
+
+                                      <a data-toggle="modal" data-target="#exampleModal" class="list-group-item list-group-item-action flex-column align-items-start ">
+                                        <div class="d-flex w-100 justify-content-between">
+                                          <h5 class="mb-1">Simulado Velocidade Média</h5>
+                                          <small>1 dia atrás</small>
+                                        </div>
+                                        <p class="mb-1">Prof.Gabriel</p>
+                                        
+                                      </a>
+
+
+                                      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                          <h5 class="mb-1">Exercícios Matriz</h5>
+                                          <small>2 dia atrás</small>
+                                        </div>
+                                        <p class="mb-1">Prof.Jorge</p>
+                                      </a>
+
+
+                                      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                        <div class="d-flex w-100 justify-content-between">
+                                          <h5 class="mb-1">Video-aula Reino Monera</h5>
+                                          <small>1 dia atrás</small>
+                                        </div>
+                                        <p class="mb-1">Prof.Tales</p>
+                                      </a>
+
+
+                                    </div>
+
+                                  </div>
+
+
+
+                          </div>
+                        </div>
+
+                      </div>
+
+
+
+                  </div>
+                  <!--Criar 2-->
+                  <div class="carousel-item">
+                    <div class="container">
+                        <h1>Criar</h1>
+                
+                        <div class="container" style="border:1px solid #C8C5C5;">
+                          <div class="container" style=" padding:10px; ">
+                            <div class="row">
+                              <div class="col-sm-12 text-center" style="border-right:1px solid black;">
+                                  <button type="button" class="btn btn-info btn-lg btn-block">Material Teórico</button>
+                                  <button type="button" class="btn btn-info btn-lg btn-block">Vídeo-aula</button>
+                                  <button type="button" class="btn btn-info btn-lg btn-block">Simulações</button>
+                                  <button type="button" class="btn btn-info btn-lg btn-block">Exercícios</button>
+                                  <button type="button" class="btn btn-info btn-lg btn-block">Simulados</button>
+                                  <button type="button" class="btn btn-info btn-lg btn-block">Sala de Aula</button>
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                  <!--Grupos 3-->
+                  <div class="carousel-item">
+                        <div class="container">
+                        <h1>Sala de Aula Virtual</h1>
+                
+                        <div class="container" style="border:1px solid #C8C5C5;">
+                          <div class="container" style=" padding:10px; ">
+                         
+                            <div class="row">
+
+                                                  <!--Sala de Aula-->
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-12">
+
+                              <iframe src="calendario.html" style="width:100%; height:501px; border:none;" scrolling="no"></iframe>
+
+                              <ul class="list-group">
+                                <a data-toggle="modal" data-target="#modalGroup">
+                                  <li class="list-group-item d-flex  align-items-center">
+                                    <div class="image-parent ">
+                                      <img src="img/board.jpeg" class="img-fluid rounded-circle img-material" >
+                                  </div>    
+                                  <span class="spanName"> 
+                                    Determinantes
+                                    <p class=""><b>Prof.</b>Fernanda</p>
+                                  </span>
+                                  </li>
+                                  </a>
+                                  
+                              </ul>
+
+                            <ul class="list-group">
+                              <li class="list-group-item d-flex  align-items-center">
+                                <div class="image-parent">
+                                  <img src="img/board.jpeg" class="img-fluid rounded-circle img-material" >
+                              </div>     
+                              <span class="spanName"> 
+                                Logaritmos
+                                <p class=""><b>Prof.</b>Gustavo</p>
+                                </span>
+                              </li>
+
+                              
+
+                              <li class="list-group-item d-flex  align-items-center">
+                                
+                                <div class="image-parent">
+                                    <img src="img/board.jpeg" class="img-fluid rounded-circle img-material" >
+                                </div>
+                                <span class="spanName"> 
+                                Geometria plana
+                                <p class=""><b>Prof.</b>Daniel</p>
+                                </span>
+                              </li>
+                              <li class="list-group-item d-flex  align-items-center">  
+                                
+                                <div class="image-parent">
+                                    <img src="img/board.jpeg" class="img-fluid rounded-circle img-material" >
+                                  </div>
+                                  <span class="spanName"> 
+                                  Geometria espacial
+                                  <p class=""><b>Prof.</b>Daniel</p>
+                                  </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                    <!--Progresso 4-->
+                  <div class="carousel-item">
+                      <div class="container">
+                        <h1>Progresso</h1>
+                
+                        <div class="container" style="border:1px solid #C8C5C5;">
+                          <div class="container" style=" padding:10px; ">
+                            <object data="progresso.html"></object>
+
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+          </div>
+      </div>
+    </div>
+
+
+       <!-- Sidebar  -->
+        <nav class="fixed" id="sidebar">
+
+            <div class="navLeft">
+
+              <div class="row">
+
+                <div class="col-sm-12 text-center options">
+                <a  data-target="#carouselPage"  data-slide-to="0" class="btn" id="effect">
+                Perfil
+                </a>
+
+              </div>
+
+              </div>
+              <div class="row">
+
+                <div class="col-sm-12 text-center options">
+                <a  data-target="#carouselPage"  data-slide-to="1" class="btn" id="effect">
+                Estudos
+                </a>
+              </div>
+
+              </div>
+              <div class="row">
+
+                <div class="col-sm-12 text-center options">
+                <a  data-target="#carouselPage"  data-slide-to="2" class="btn" id="effect">
+                Criar
+                </a>
+                </div>
+
+              </div>
+              <div class="row">
+
+                <div class="col-sm-12 text-center options">
+                <a  data-target="#carouselPage"  data-slide-to="3" class="btn" id="effect">
+                Sala de Aula Virtual
+                </a>
+                </div>
+
+              </div>
+              <div class="row">
+
+                <div class="col-sm-12 text-center options">
+                <a  data-target="#carouselPage"  data-slide-to="4" class="btn" id="effect">
+                Progresso
+                </a>
+                </div>
+
+              </div>
+            
+
+
+          </div>
+        </nav>
+
+
+
+
+
+</div>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Exatas 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+
+<style type="text/css">
+  
+.btnGroup{
+  padding:8px; 
+  transition-duration:0s; 
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(151, 147, 147, 0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(151, 147, 147, 0.75);
+box-shadow: 0px 0px 5px 0px rgba(151, 147, 147, 0.75);
+  box-sizing:border-box;
+  border-bottom:5px solid white;
+  border-radius:0;
+  margin-bottom:20px;
+
+}
+.btnGroup:hover{
+
+ 
+ border-bottom:5px solid #52c2cd; 
+
+}
+.btnGroup:active{
+
+
+  background-color: gray;
+
+}
+.btnGroup1{
+  
+  position:relative;
+bottom: -10px;
+
+
+  height:100%; 
+  padding:8px; 
+  transition-duration:0s; 
+}
+.btnGroup2{
+  position:relative;
+bottom: -10px;
+
+  
+  height:100%; 
+  padding:8px; 
+  transition-duration:0s; 
+}
+.btnGroup3{
+  position:relative;
+bottom: -10px;
+
+  
+  height:100%; 
+  padding:8px; 
+  transition-duration:0s; 
+}
+.divBtns{
+height:100%; 
+position:relative;
+bottom: 0px;
+
+}
+.header{
+  padding:0px; 
+}
+.infoGroup{
+  padding: 20px;
+  margin:20px;
+  background-image:url('img/Untitled.png') ;
+  height:215px;
+  box-shadow:1px 0px 20px rgb(160, 159, 159); 
+  border-radius:4px;
+
+ 
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.imgPost{
+
+  margin:10px;
+
+}
+p{
+  color:black;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.postDiv{
+
+min-height:100px !important;
+box-shadow:1px 0px 20px rgba(151, 147, 147, 0.75);
+ display:flex;
+ height:300px;
+ margin-left:20px;
+border-radius:10px;
+}
+.image-parent {
+  max-width: 60px;
+}
+.sde{
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; height:100%;
+  transition-delay:1s;
+  
+
+}
+.sde:hover{
+  background-size:100% 100%;
+}
+</style>
+
+<!--GrupoModalPage-->
+<div class="modal fade bd-example-modal-lg" id="modalGroup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-full">
+      <div class="modal-content">
+          <div class="modal-header header navbar-expand-lg" style="box-shadow:1px 0px 10px rgb(131, 131, 131) ;">
+            
+              
+
+              <div class="col-sm-11 text-center divBtns">
+                <h5>
+              <div type="button" data-target="#carouselGroup"  data-slide-to="0" class="col-sm-3 btn btnGroup btnGroup1" id="effect">
+                
+                <b>Atividades</b>
+             
+              </div>
+              <div type="button" data-target="#carouselGroup"  data-slide-to="1" class="col-sm-3 btn btnGroup btnGroup2" id="effect">
+                
+                <b>Chat</b>
+              
+              </div>
+              <div type="button" data-target="#carouselGroup"  data-slide-to="2" class="col-sm-3 btn btnGroup btnGroup3" id="effect">
+                
+                <b>Integrantes</b>
+              
+              </div>
+            </h5>
+
+            </div>
+
+              <div class="col-sm-1">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            </div>
+            <div class="modal-body">
+
+                <div class="col-sm-12 infoGroup" style="width:97%;">
+                    <h3 class="modal-title" id="exampleModalLongTitle">EEVMF - 2ºB</h3>
+                  <h5 class="modal-title" id="exampleModalLongTitle">Determinantes</h5>
+                  <span class="text-muted">Prof.ª Fernanda</span>
+                </div>
+
+                  <div id="carouselGroup" class="carousel slide carousel-fade"  data-ride="carousel" data-interval="false">
+                  <div class="carousel-inner">
+                            <div class="carousel-item active"> 
+                          
+                            <div class="row">
+                              <div class="col-sm-2"></div>
+                              <div class="col-sm-8">
+                                
+                                  <div class="card" style="width: 100%;">
+                                    
+                                      <div>
+                                          <p style="float: left;"><img src="img/user2.jpg" class="rounded-circle imgPost" width="80px" ></p>
+                                          <p style="margin-top:38px;"><b>Profª Fernanda</b>
+                                          <br>
+                                          <span class="text-muted">1 dia atrás</span>
+                                          </p>
+                                          
+                                      </div>
+
+                                      <div class="text-center col-sm-6 postDiv" >
+                                        
+                                        <p class="card-text">
+                                          <div class="col-sm-2 sde" style="  background-color:gray;background-image:url('img/imgbackPost.png');" >
+                                          
+                                            <span style="font-size: 40px;"class="fa fa-arrow-down centered"></span>
+
+                                          </div>
+                                          <div class="col-sm-8">
+                                            <p><h5>Lista de exercícios</h5></p>
+                                            <p class="text-muted">PDF</p>
+                                          </div>
+
+                                        </div>
+                                            
+
+                                        </p>
+                                        
+                                      </div>
+                                      <div class="card" style="width: 100%;">
+                                        
+                                          <div>
+                                              <p style="float: left;"><img src="img/user2.jpg" class="rounded-circle imgPost" width="80px" ></p>
+                                              <p style="margin-top:38px;"><b>Profª Fernanda</b>
+                                                <br>
+                                                <span class="text-muted">1 dia atrás</span>
+                                                </p>
+                                          </div>
+    
+                                          <div class="text-center col-sm-6 postDiv" style=" box-shadow:1px 0px 20px rgba(151, 147, 147, 0.75); display:flex;height:300px;margin-left:20px; ">
+                                            
+                                            <p class="card-text">
+                                              <div class="col-sm-2 sde" style="  background-color:gray;background-image:url('img/imgbackPost2.png');" >
+                                              
+                                                <span style="font-size: 40px;"class="fa fa-arrow-down centered"></span>
+    
+                                              </div>
+                                              <div class="col-sm-8">
+                                                <p><h5>Lista de exercícios</h5></p>
+                                                <p class="text-muted">PDF</p>
+                                              </div>
+    
+                                            </div>
+                                                
+    
+                                            </p>
+                                            
+                                          </div>
+
+
+                                    </div>
+
+
+                              </div>
+                              <div class="col-sm-2"></div>
+
+
+                            </div>
+                                <div class="carousel-item">
+                                    <style type="text/css">
+                                      #fname{
+                                            width: 100%;
+                                            padding: 12px 20px;
+                                            margin: 8px 0;
+                                            display: inline-block;
+                                            border: 1px solid #ccc;
+                                            border-radius: 4px;
+                                            box-sizing: border-box;
+                                          }
+                                          .cardShadow{
+                                            -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.28);
+                                            -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.28);
+                                            box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.28);
+                                          }
+
+                                    </style>
+
+                                  <div class="col-sm-12 text-center">
+                                        <input type="text" id="fname" class="coment" name="firstname" placeholder="Escrever mensagem" style="width:50%">  
+
+                                  </div>
+                                  <div class="container">
+                                      
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center" style="display:flex; margin-left:5%;">
+                                          
+                                            <div style="width: 6rem; margin-top: 5px;">
+                                                            <div class="image-parent">
+                                                                <img src="img/user2.jpg" class="img-fluid rounded-circle img-material" width="100%" >
+                                                            </div>
+                                            </div>
+                                            <div class="card cardShadow" style="width: 50rem;">
+                                              <div class="card-head text-right">
+                                                <span class=" hjg">16:00 hrs</span>
+
+                                              </div>
+                                                <div class="card-body text-left">
+                                                  <h5>Registros arqueológicos mostram que a matemática sempre foi parte da atividade humana. Ela evoluiu a partir de contagens, medições, cálculos e do estudo sistemático de formas geométricas e movimentos de objetos físicos. Raciocínios mais abstratos que envolvem argumentação lógica surgiram com os matemáticos gregos aproximadamente em 300 a.C., notadamente com a obra Os Elementos de Euclides. A necessidade de maior rigor foi percebida e estabelecida por volta do século XIX </h5>
+                                                
+                                                </div>
+                                                <div class="card-body text-left" style="width: 50rem;border-top:1px solid #dfdfdf ">
+                                                   <input type="text" id="fname" class="coment"  placeholder="Adicionar comentario">                                    
+                                                </div>
+                                              </div>
+                                      </div>
+                                    </div>
+                                      <br>
+                                      <div class="row">
+                                          <div class="col-sm-12 text-center" style="display:flex; margin-left:5%;">
+                                            
+                                              <div style="width: 6rem; margin-top: 5px;">
+                                                              <div class="image-parent">
+                                                                  <img src="img/user3.jpg" class="img-fluid rounded-circle img-material" width="100%" >
+                                                              </div>
+                                              </div>
+                                              <div class="card cardShadow" style="width: 50rem;">
+                                                <div class="card-head text-right">
+                                                  <span class=" hjg">12:00 hrs</span>
+  
+                                                </div>
+                                                  <div class="card-body text-left">
+                                                    <h5>Há muito tempo busca-se um consenso quanto à definição do que é a matemática. No entanto, nas últimas décadas do século XX tomou forma uma definição que tem ampla aceitação entre os matemáticos: matemática é a ciência das regularidades (padrões). Segundo esta definição, o trabalho do matemático consiste em examinar padrões abstratos, tanto reais como imaginários, visuais ou mentais </h5>
+                                                  
+                                                  </div>
+                                                  <div class="card-body text-left" style="width: 50rem;border-top:1px solid #dfdfdf ">
+                                                     <input type="text" id="fname" class="coment"  placeholder="Adicionar comentario">                                    
+                                                  </div>
+                                                </div>
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="row">
+                                          <div class="col-sm-12 text-center" style="display:flex; margin-left:5%;">
+                                            
+                                              <div style="width: 6rem; margin-top: 5px;">
+                                                              <div class="image-parent">
+                                                                  <img src="img/user4.png" class="img-fluid rounded-circle img-material" width="100%" >
+                                                              </div>
+                                              </div>
+                                              <div class="card cardShadow" style="width: 50rem;">
+                                                <div class="card-head text-right">
+                                                  <span class=" hjg">11:40 hrs</span>
+  
+                                                </div>
+                                                  <div class="card-body text-left">
+                                                    <h5>Em matemática, uma equação quadrática ou equação do segundo grau é uma equação polinomial de grau dois</h5>
+                                                  
+                                                  </div>
+                                                  <div class="card-body text-left" style="width: 50rem;border-top:1px solid #dfdfdf ">
+                                                     <input type="text" id="fname" class="coment"  placeholder="Adicionar comentario">                                    
+                                                  </div>
+                                                </div>
+                                        </div>
+                                      </div>
+                                      <br>
+                                      <div class="row">
+                                          <div class="col-sm-12 text-center" style="display:flex; margin-left:5%;">
+                                            
+                                              <div style="width: 6rem; margin-top: 5px;">
+                                                              <div class="image-parent">
+                                                                  <img src="img/user4.png" class="img-fluid rounded-circle img-material" width="100%" >
+                                                              </div>
+                                              </div>
+                                              <div class="card cardShadow" style="width: 50rem;">
+                                                <div class="card-head text-right">
+                                                  <span class=" hjg">11:38 hrs</span>
+  
+                                                </div>
+                                                  <div class="card-body text-left">
+                                                    <h5>Em Portugal é conhecida por fórmula resolvente e no Brasil, essa fórmula é conhecida como Fórmula de Bhaskara, mas em outros países é conhecida simplesmente como a fórmula geral para resolução da equação polinomial do segundo grau </h5>
+                                                  
+                                                  </div>
+                                                  <div class="card-body text-left" style="width: 50rem;border-top:1px solid #dfdfdf ">
+                                                     <input type="text" id="fname" class="coment"  placeholder="Adicionar comentario">                                    
+                                                  </div>
+                                                </div>
+                                        </div>
+                                      </div>
+                                      
+     
+
+                                  </div>
+                                </div>
+                            <div class="carousel-item"> 
+                              
+                                <div class="container">
+
+                                  <div class="row">
+                                    <div class="col-sm-12 text-center">
+
+                                        <ul class="list-group">
+                                            <li class="list-group-item d-flex  align-items-center">
+                                      
+                                                <div class="image-parent">
+                                                    <img src="img/user2.jpg" class="img-fluid rounded-circle img-material" >
+                                                </div>
+                                                <span class="spanName"> 
+                                                Fernanda Fernadez Souza - <b>675429</b>
+                                                <p class="text-muted">Professor(a)</p>
+                                                </span>
+                                              </li>
+                                        </ul>
+
+                                        <div class="line"></div>
+
+                                      <ul class="list-group">
+                                      <li class="list-group-item d-flex  align-items-center">
+                                
+                                          <div class="image-parent">
+                                              <img src="img/user3.jpg" class="img-fluid rounded-circle img-material" >
+                                          </div>
+                                          <span class="spanName"> 
+                                          José Miguel Martins - <b>525079</b>
+                                          <p class="text-muted">Estudante</p>
+                                          </span>
+                                        </li>
+                                        <li class="list-group-item d-flex  align-items-center">
+                                
+                                            <div class="image-parent">
+                                                <img src="img/user4.png" class="img-fluid rounded-circle img-material" >
+                                            </div>
+                                            <span class="spanName"> 
+                                            Thiago Gabriel - <b>785609</b>
+                                            <p class="text-muted">Estudante</p>
+                                            </span>
+                                          </li>
+                                          <li class="list-group-item d-flex  align-items-center">
+                                
+                                              <div class="image-parent">
+                                                  <img src="../perfil.jpg" class="img-fluid rounded-circle img-material" >
+                                              </div>
+                                              <span class="spanName"> 
+                                              Elon Musk - <b>525079</b>
+                                              <p class="text-muted">Estudante</p>
+                                              </span>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                </div>
+                            </div>
+                  </div>
+                </div>
+             
+
+            </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+

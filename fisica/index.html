@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Física</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<style>
+#sidebar{
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+}
+.imgLogo{
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+}
+</style>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav class="fixed" id="sidebar">
+            <div class="sidebar-header text-center">
+                <img class="rounded-circle imgLogo" src="assets/img/logoFisica.png" width="150px" height="150px">
+            </div>
+
+            <ul class="list-unstyled components text-center">
+                <p text-align="center" style="font-family:sans-serif;"><h4>Física</h4></p>
+
+            </ul>
+            <div class="navLeft">
+            <ul class="list-unstyled text-center">
+                <li>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-secondary btn-lg btn-block historia" data-toggle="modal" data-target="#historiaModal">
+                        História
+                         </button>
+                       </br></br>
+                            <!-- Modal -->
+            <div class="modal fade " id="historiaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">historia</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                                <iframe src="https://pt.wikipedia.org/wiki/F%C3%ADsica" style="width:100%; height:100vh"></iframe>
+                        </div>
+
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">fechar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                         <div class="dropdown">
+                          <button class="btn btn-secondary btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           tópicos
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Física</a>
+
+
+                          </div>
+                        </div>                
+                </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Page Content  -->
+        
+
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="nav navbar-nav ml-auto">
+                                 <li class="nav-item ">
+                                <a class="nav-link" href="../inicio/index.html">Início</a>
+                            </li>
+                            <li class="nav-item disable">
+                                <a class="nav-link" href="../matematica/index.html">Matemática</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disable" href="../engenharia/index.html">Engenharia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disable" href="../informatica/index.html">informática</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../fisica/index.html">Física</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../quimica/index.html">Química</a>
+                            </li>
+
+                            <li class="nav-item disable">
+                                <a class="nav-link" href="../biologia/index.html">Biologia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disable" href="../astronomia/index.html">Astronomia</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link disable" href="../bioengenharia/index.html">Bioquímica</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" data-target="#carouselPage"  data-slide-to="0"class="btnFormulas btn btn-secondary " id="effect">
+                          Conteúdo
+                        </button>
+                        <button type="button" data-target="#carouselPage"  data-slide-to="1"class="btnTabela btn btn-dark " id="effect">
+                          Formulas
+                        </button>
+                          <button type="button" data-target="#carouselPage" data-slide-to="2" class="btnAutores btn" style="background-color: #19b596;">
+                             Autores
+                          </button>
+                        </div>
+                         </div>
+                         
+                    </div>
+                  </div>
+
+                  <div id="carouselPage" class="carousel slide"  data-ride="carousel" data-interval="false">
+                      
+                      <div class="carousel-inner">
+                        <!-- Formulas-->
+                        <div class="carousel-item active">
+                           
+                          <div>
+                            <section class="conteudo bg-secondary">
+                              
+                              <div class="container">
+                                <h1 style="color:white;">Física</h1>
+                                <div class="line"></div>
+                                    
+                                <!--Linha 1-->
+
+                                  <div class="row">
+                                     <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal1">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img1.png" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Medição</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+                                      <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal2">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img2.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Movimento Retilíneo</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+                                       <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal3">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img3.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Vetores</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+
+                                    </div>
+
+                                     <!--Linha 2-->
+
+                                  <div class="row">
+                                     <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal4">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img4.png" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Movimento em Duas e Três Dimensões</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+                                      <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal5">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img5.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Força e Movimento</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+                                       <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal6">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img6.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Energia Cinética e Trabalho</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+
+                                    </div>
+
+                                      <!--Linha 3-->
+
+                                  <div class="row">
+                                     <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal7">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img7.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Energia Potencial e Conservação da Energia</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+                                      <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal8">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img8.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Centro de Massa e Momento Linear</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+                                       <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal9">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img9.jpg" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Rotação</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+
+                                    </div>
+
+                                        <!--Linha 4-->
+
+                                  <div class="row">
+                                     <div class="col-12 col-sm-6 col-lg-4">
+                                       <a data-toggle="modal" data-target="#modal10">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="assets/img/cards/img10.png" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Rolagem, Torque e Momento Angular</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                            </a>
+                                    </div>
+
+                                    </div>
+
+
+
+                                </div>                                                                                                                                                       
+                           </section>
+                           <section class="bg-dark" id="">
+
+                                <div class="line"></div>
+                                <div class="container">
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+
+
+                                       <a class="" data-toggle="modal" data-target="#exampleModal">
+                                        <div class="card card-st cardContent" style="width: 18rem;">
+                                            <img class="card-img-top" src="paginas/img/" alt="Imagem de capa do card">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Água</h5>
+                                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                            </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+                           </section>
+                       </div>
+                   </div>
+                   <!-- Formulas-->
+                   <div class="carousel-item">
+                           
+                          <div>
+                            <section class="formulas bg-light">
+                                  <iframe src="formulas.html" scrolling="no"style="width:100%;height:750px;border-right:none;border-left:none;border-bottom:none; border-top:1px 1px black;"></iframe>
+                           </section>
+                       </div>
+                   </div>
+
+                   <!-- Autores-->
+                   <div class="carousel-item">
+
+                          <section class="autores" style="background-color:#19b596">
+                            <a href="javascript:history.go(-1)">&#8592;voltar</a>
+                          <iframe src="autores.html" class="iframeC" frameborder="0"  vspace="100%"></iframe>
+                        </section>
+                   </div>
+
+                               
+
+
+
+            
+            <div class="line"></div>
+
+            <div class="line"></div>
+
+        </div>
+        
+    </div>
+      <!--///////////////////////////////////////////////////////////////////////////////////////////// Barra Direita //////////////////////////////////-->
+      <div class="barraDireita text-center">
+         
+            
+        <br> 
+        <span  id="pop3"data-container="body" data-toggle="popover" data-placement="left" data-content="
+        <span href='#' class='close' onclick='ClosePop3()' data-dismiss='popover'>&times;</span>
+        <br>
+        <div calss='container'>
+            <div class='row'>
+                    <div class='col-sm-12 text-center'>
+                      <a href='../user/index.html'>
+                        <img src='../perfil.jpg' class='rounded-circle' style='box-shadow:10px 0px 50px rgb(190, 189, 189);'width='80px'>
+                        <h6>Elon Musk</h6>
+                    </div>
+            </div>
+            <div class='row'>
+              <br>
+                <div class='col-sm-12 text-center'>
+                <b>Email:</b> gahdnsudn@gmail.com
+                </div>
+            </div>
+    </div>
+        
+        ">
+          <i class="fa fa-user" style="font-size:30px"></i>
+         </span>
+
+          <br>
+          <br> 
+        <span id="pop2" data-container="body" data-toggle="popover" data-title="" data-placement="left" data-content="
+        <span href='#' class='close' onclick='ClosePop2()' data-dismiss='popover'>&times;</span>
+        <br>
+        <div class='form-group input-group'>
+            <span class='input-group-addon'>
+              <i class='fa fa-search' aria-hidden='true' style='font-size:27px'></i>
+            </span>
+            &nbsp;
+           <input name='pesquisar'  placeholder='Pesquisar' type='text' class='form-control'>
+          </div>
+
+          
+          ">
+            <i class="fa fa-search " style="font-size:30px"></i>
+          </span>
+          <br>
+          <br> 
+          
+               <span  id="pop1" data-container="body" data-toggle="popover" data-placement="left" data-content="
+
+               <object width='330px' height='270px'data='calculadora.htm'></object>
+               <span href='#' class='close' onclick='ClosePop1()' data-dismiss='popover'>&times;</span>
+               
+
+               ">
+                <i class="fa fa-calculator" style="font-size:30px"></i>
+                
+               </span>
+        
+<script>
+
+
+ClosePop1 = function () {
+$('#pop1').popover('hide');
+}
+ClosePop2 = function () {
+$('#pop2').popover('hide');
+}
+ClosePop3 = function () {
+$('#pop3').popover('hide');
+}
+
+
+
+
+</script>
+</div>
+
+
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+            $("[data-toggle=popover]").popover({
+            html : true,
+            content: function() {
+                var content = $(this).attr("data-popover-content");
+                return $(content).children(".popover-body").html();
+            }
+        });
+        </script>
+</body>
+
+</html>
+
+
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////////Modais/////////////////////////////////-->
+<style type="text/css">
+      .containerCard{
+
+      padding:20px;
+      margin:5px;
+      background-color:#19b596;  
+      box-shadow:1px 0px 40px rgb(190, 189, 189);   
+      transition-duration:0.5s; 
+      border-left:5px solid white; 
+
+    }
+    .containerCard:hover{
+      box-shadow:1px 0px 10px black;
+      border-left:5px solid black; 
+      
+    }
+    .symbols{
+      position:relative;
+      right:0px;
+      bottom:0px;   
+    }
+</style>
+
+
+
+
+
+  <!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Medição</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag1/index.html">
+                     <div class="containerCard">
+                        MEDINDO GRANDEZAS COMO O COMPRIMENTO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag2/index.html">
+                     <div class="containerCard">
+                      TEMPO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag3/index.html">
+                     <div class="containerCard">
+                       MASSA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag4/index.html">
+                     <div class="containerCard">
+                        POSIÇÃO, DESLOCAMENTO E VELOCIDADE MÉDIA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag5/index.html">
+                     <div class="containerCard">
+                      VELOCIDADE INSTANTÂNEA E VELOCIDADE ESCALAR
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag6/index.html">
+                     <div class="containerCard">
+                       ACELERAÇÃO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag7/index.html">
+                     <div class="containerCard">
+                        ACELERAÇÃO CONSTANTE
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag8/index.html">
+                     <div class="containerCard">
+                      ACELERAÇÃO EM QUEDA LIVRE
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag9/index.html">
+                     <div class="containerCard">
+                       INTEGRAÇÃO GRÁFICA NA ANÁLISE DE MOVIMENTOS
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag10/index.html">
+                     <div class="containerCard">
+                        VETORES E SUAS COMPONENTES
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag11/index.html">
+                     <div class="containerCard">
+                      VETORES UNITÁRIOS; SOMA DE VETORES A PARTIR DAS COMPONENTES
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag12/index.html">
+                     <div class="containerCard">
+                       MULTIPLICAÇÃO DE VETORES
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Modal 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag13/index.html">
+                     <div class="containerCard">
+                        POSIÇÃO E DESLOCAMENTO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag14/index.html">
+                     <div class="containerCard">
+                      VELOCIDADE MÉDIA E VELOCIDADE INSTANTÂNEA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag15/index.html">
+                     <div class="containerCard">
+                       ACELERAÇÃO MÉDIA E ACELERAÇÃO INSTANTÂNEA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag16/index.html">
+                     <div class="containerCard">
+                        MOVIMENTO BALÍSTICO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag17/index.html">
+                     <div class="containerCard">
+                      MOVIMENTO CIRCULAR UNIFORME
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag18/index.html">
+                     <div class="containerCard">
+                       MOVIMENTO RELATIVO EM UMA DIMENSÃO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag19/index.html">
+                     <div class="containerCard">
+                       MOVIMENTO RELATIVO EM DUAS DIMENSÕES
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Modal 5 -->
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag20/index.html">
+                     <div class="containerCard">
+                        A PRIMEIRA E A SEGUNDA LEI DE NEWTON
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag21/index.html">
+                     <div class="containerCard">
+                      ALGUMAS FORÇAS ESPECIAIS
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag22/index.html">
+                     <div class="containerCard">
+                       APLICAÇÕES DAS LEIS DE NEWTON
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+           <div class="col-sm-12 ">
+                  <a href="paginas/pag23/index.html">
+                     <div class="containerCard">
+                        ATRITO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag24/index.html">
+                     <div class="containerCard">
+                      FORÇA DE ARRASTO E VELOCIDADE TERMINAL
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag25/index.html">
+                     <div class="containerCard">
+                       MOVIMENTO CIRCULAR UNIFORME
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Modal 6 -->
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag26/index.html">
+                     <div class="containerCard">
+                        ENERGIA CINÉTICA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag27/index.html">
+                     <div class="containerCard">
+                      TRABALHO E ENERGIA CINÉTICA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag28/index.html">
+                     <div class="containerCard">
+                       TRABALHO REALIZADO PELA FORÇA GRAVITACIONAL
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag29/index.html">
+                     <div class="containerCard">
+                        TRABALHO REALIZADO POR UMA FORÇA ELÁSTICA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag30/index.html">
+                     <div class="containerCard">
+                      TRABALHO REALIZADO POR UMA FORÇA VARIÁVEL GENÉRICA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag31/index.html">
+                     <div class="containerCard">
+                       POTÊNCIA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Modal 7 -->
+<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag32/index.html">
+                     <div class="containerCard">
+                        ENERGIA POTENCIAL
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag33/index.html">
+                     <div class="containerCard">
+                      CONSERVAÇÃO DA ENERGIA MECÂNICA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag34/index.html">
+                     <div class="containerCard">
+                       INTERPRETAÇÃO DE UMA CURVA DE ENERGIA POTENCIAL
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag35/index.html">
+                     <div class="containerCard">
+                        TRABALHO REALIZADO POR UMA FORÇA EXTERNA SOBRE UM SISTEMA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag36/index.html">
+                     <div class="containerCard">
+                      CONSERVAÇÃO DA ENERGIA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Modal 8 -->
+<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag37/index.html">
+                     <div class="containerCard">
+                        CENTRO DE MASSA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag38/index.html">
+                     <div class="containerCard">
+                      A SEGUNDA LEI DE NEWTON PARA UM SISTEMA DE PARTÍCULAS
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag39/index.html">
+                     <div class="containerCard">
+                       MOMENTO LINEAR
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+           <div class="col-sm-12 ">
+                  <a href="paginas/pag40/index.html">
+                     <div class="containerCard">
+                        COLISÃO E IMPULSO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag41/index.html">
+                     <div class="containerCard">
+                      CONSERVAÇÃO DO MOMENTO LINEAR
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag42/index.html">
+                     <div class="containerCard">
+                       MOMENTO E ENERGIA CINÉTICA EM COLISÕES
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+           <div class="col-sm-12 ">
+                  <a href="paginas/pag43/index.html">
+                     <div class="containerCard">
+                        COLISÕES ELÁSTICAS EM UMA DIMENSÃO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag44/index.html">
+                     <div class="containerCard">
+                      COLISÕES EM DUAS DIMENSÕES
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag45/index.html">
+                     <div class="containerCard">
+                       SISTEMAS DE MASSA VARIÁVEL: UM FOGUETE
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Modal 9 -->
+<div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag46/index.html">
+                     <div class="containerCard">
+                        AS VARIÁVEIS DA ROTAÇÃO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag47/index.html">
+                     <div class="containerCard">
+                      ROTAÇÃO COM ACELERAÇÃO ANGULAR CONSTANTE
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag48/index.html">
+                     <div class="containerCard">
+                       RELAÇÕES ENTRE AS VARIÁVEIS LINEARES E ANGULARES
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag49/index.html">
+                     <div class="containerCard">
+                        ENERGIA CINÉTICA DE ROTAÇÃO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag50/index.html">
+                     <div class="containerCard">
+                      CÁLCULO DO MOMENTO DE INÉRCIA
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag51/index.html">
+                     <div class="containerCard">
+                       TORQUE
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag52/index.html">
+                     <div class="containerCard">
+                        A SEGUNDA LEI DE NEWTON PARA ROTAÇÕES
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag53/index.html">
+                     <div class="containerCard">
+                      TRABALHO E ENERGIA CINÉTICA DE ROTAÇÃO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- Modal 10 -->
+<div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="row">
+
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag54/index.html">
+                     <div class="containerCard">
+                        ROLAGEM COMO UMA COMBINAÇÃO DE TRANSLAÇÃO E ROTAÇÃO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag55/index.html">
+                     <div class="containerCard">
+                      AS FORÇAS E A ENERGIA CINÉTICA DA ROLAGEM
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag56/index.html">
+                     <div class="containerCard">
+                       O IOIÔ
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag57/index.html">
+                     <div class="containerCard">
+                        REVISÃO DO TORQUE
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag58/index.html">
+                     <div class="containerCard">
+                      MOMENTO ANGULAR
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag59/index.html">
+                     <div class="containerCard">
+                       A SEGUNDA LEI DE NEWTON PARA ROTAÇÕES
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+          <div class="col-sm-12 ">
+                  <a href="paginas/pag60/index.html">
+                     <div class="containerCard">
+                        MOMENTO ANGULAR DE UM CORPO RÍGIDO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag61/index.html">
+                     <div class="containerCard">
+                      CONSERVAÇÃO DO MOMENTO ANGULAR
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+                    <div class="col-sm-12 ">
+                  <a href="paginas/pag62/index.html">
+                     <div class="containerCard">
+                       PRECESSÃO DE UM GIROSCÓPIO
+                      <br><br>
+                        <div class="symbols" >
+                          <span class="fa fa-book"></span>
+                          <span class="fa fa-video"></span>
+                          <span class="fa fa-car"></span>
+                          <span class="fa fa-file-alt"></span>
+                        </div>
+                      </div>
+                  </a>
+          </div>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+ 

@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style type="text/css">
+    	body{
+            padding-bottom:10px; 
+    	background-image: linear-gradient(to top, #ffdacc, #ff755b); 
+    	}
+    	a{
+    		color:black;
+    	}
+    	a:hover{
+    		color:black;
+    	}
+        
+
+    </style>
+  </head>
+  <body>
+
+				<div class="row">
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Leonhard_Euler" aria-label="Leonhard Euler"  role="button" data-hveid="45" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYILTAd">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_98" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Leonhard Euler" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Leonhard </div>
+                                    <div class="wfg6Pb">Euler</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1707–1783</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Euclides" aria-label="Euclides"  role="button" data-hveid="48" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIMDAe">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_100" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Euclides" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Euclides</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz" aria-label="Gottfried Wilhelm Leibniz"  role="button" data-hveid="51" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIMzAf">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_102" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Gottfried Wilhelm Leibniz" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Gottfried </div>
+                                    <div class="wfg6Pb">Wilhelm Leibniz</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1646–1716</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Isaac_Newton" aria-label="Isaac Newton"  role="button" data-hveid="54" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYINjAg">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_104" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Isaac Newton" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Isaac Newton</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1643–1727</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            	</div>
+            	<div class="row">
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Henri_Poincar%C3%A9" aria-label="Henri Poincaré"  role="button" data-hveid="57" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIOTAh">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_106" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Henri Poincaré" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Henri </div>
+                                    <div class="wfg6Pb">Poincaré</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1854–1912</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Pit%C3%A1goras" aria-label="Pitágoras"  role="button" data-hveid="60" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIPDAi">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_108" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Pitágoras" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Pitágoras</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Arquimedes" aria-label="Arquimedes"  role="button" data-hveid="63" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIPzAj">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_110" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Arquimedes" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Arquimedes</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">288 a.C.–212 a.C.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Leonardo_Fibonacci" aria-label="Leonardo Fibonacci" role="button" data-hveid="66" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIQjAk">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_112" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Leonardo Fibonacci" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Leonardo </div>
+                                    <div class="wfg6Pb">Fibonacci</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Carl_Friedrich_Gauss" aria-label="Carl Friedrich Gauss"  role="button" data-hveid="69" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIRTAl">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_114" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHgAeAMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xAAzEAACAQMDAgUDAwMEAwAAAAABAgMABBEFEiExQQYTUWFxIoGhFDKRB0LRM0PB4VJysf/EABkBAAIDAQAAAAAAAAAAAAAAAAEDAAIEBf/EACARAAICAgMBAAMAAAAAAAAAAAABAhEDIRIxQQQUMlH/2gAMAwEAAhEDEQA/AOVUXWjIpDtjgUCBlgOKQWJ70nqaPFEgPv8AajAJo1HPTJpwY7n+KgBKqTS+nXFGDjpQ3EDIqED8pXBCcN6U0yMh5GKeV2xkM1Gr54Iz7VCDsR3IKcU7TkjIptMLgAYpz5oEFblIzt5oSSbmzgUii61Uge7PWhQAoVCELrTOMmpA4IOKYkADHB4qyIDAx60dHCu5ZPYZobaJA+e1KxQHHWrXRNCu9YkxAAkIOGlf9o9aDdB7KqrHTNE1PUnUWdpKyH/cK4Qfeui6T4X0yxQLFGLi5Iw8sighPgdj+a1CYjjRFUKqjCgdqRL6Euh0cEn2c1tv6d30qAzX9vE5P+mqF8ffipEn9PY8YTVPrHUtFkfg10EkNncMikmGF+doBHQjikv6JeDPx0czfwLq65FrLbXPYIX2MfjP+agXPh/VLQN+qtXjx8GunXMbQncuX9OcGoGo3Mt/avGqeYy/2n93/Zq8Pob0xU8LicvZSrFSOR1osVIvYWhuGVlKkdjTAxTxQQoUMc0KICHTUiYOR0p3PNDrViDducFh6ihStoVgRSraCS5uEghTdI5woziiQs/DWiy61fiLlIE5kkHYf5rq9hYW1jbR20CYij6ITkff1NQfDunx6XpkVsjbiOXcd2q1TG4VgzZOel0bMONLsfiC5/aKkMvH1cZ6VDe7ghDFiTt64Uml2eq6feN5cdzH5uP2Hg/ms6NTrwcIxSQMnvSyRuK5HFJj+vO3PzUARroFV3YJxWevDtuXcEjjOR2q9vpljBDOMHvms/eusm8odw45BopC8lUZjxDAEvFlVlJkQF8dz61TkelXHiAYvACeQo49PaqkjFb4dHPYihRmhVyEDrQos0AasAUv1nFaHw/aGyRrpwxmOVjTbyPU1n4j9Yz0yDmurWVrDLbWswYiMxg420vJKlQyEb3/AAf0lnNnGW5cj6vmpzfSoYqcUxGBFuVDkA8GpkMazJtdSQBkY7Vz5OnRthG0mU97NEdzSuIIAcM7ngn0A71XwCwk8u6smR0/skUEZHtmr650qxurdre5i8yMjDAmmbbR7aFI7Wzi3Ro25Vz0980W1Xex1NPXRIsfMljL9ttZ3VdXuVEiRmWPyyd5j4IHzW0iIjfHGcYOBgVSRW0cWrXqOqSRzASBGGeoAP24qsavZHF0ZqxnjvLYXXnXvk79u+UDAP2q0tAiycDeD0IPFW8ljALdra1t0RW6rGnT4qraH9JL5ZUJg8Adqu2vBUoUtmd8Q2E8Fw00iko5yHxx8VQuPz0rVeJ7lJDFEj7tuSwx+01l5MAjrWqD0c9jLAg/ahSJCcj4oU2wEHHNFnAoZ5oicsBTAClPNdQ8FubnQI4lYgxyMM99vUVy5e35raeCpbhEka3K+Wq4dTkljntjvSsquI3FLjLZuZl2nbj+0HJ70qCbAB7VRaXqmoS6u8V3btHBImELdiKuJ08ps54P8CsOWDrka8c0pOJZQhZSCT/FKuJ4bOMlmwT0VepqBHcFUIB/FCJfOYtLhj0+KTZqVMlJKXYMV25qr1lns72C5jC8Eq//AK1Ib9TZrJM00UttGc7ShVwPnODWZ8ReJotTi8qzQqwb9xH7atCNhnJVRtEk+ncpHIqhvsvdsznPvU7TZfMsYGPG+MZHoe9QHJaWY5wFBGTVlHYjK0o2ZHUlK3MqcHDHpVXIuSfxVldHdM5JySTUKRK2ROayC4JJ9hR06y9KFXAU+ccd6L+4fNDFSIrG4mh86NMqSQADzx14pwBnq3HSun/0x0Z57R7uVnSJ8qm0kbiD1+3Sud2djJc3dtbIw8yWVYx7MxwM/wA16J0zT4dM06Cyt1AjgQIvvgc0rI6ReKI76TDcKkFwqeXGdyMgwQwPWqy6h8iVopydwPf09a0Y4xUfU7AX0BYf6y/t9/akMZFq6M1sRWcZ7ZHFQozfS3jGIJFAnAEmcyfHpUtm2ZUqVdeCDRLPwDnpWWXZujpDE81wYXVvIBIxsYs3/ArP3+mmQidfKjcDGEtsfyc81qFKOSWYZ7cUT7PY4NBSfgyrRC0GWZYz+tcEgHZ9OOMVWX+ovDC8YU5diAfQVPvJ1klOwgDvioEiBw2/lT0HpTI9mXL1RnZOc+tMOtWd5ZMhLR5ZP/lV8nArRFmOSIjA0KcPWhTCpnk5yByfarzZ+ntoUBwwXLDvk1WaXbie9ReSvLE/AqfqAkjl+oYLnJXvTgxReeBTHP4v0xbld2JCVY9QQpx884613BkIFea7e4ms7qK4tpDHPE4ZHHVWB4rT239S/ESXHmXV6ssKEZg8tU3D5UZFKyRb6Lo7QEYnoTTkf0nkVlNO8SReIdIkudEvZoryEAzWshBdB8c5HoR+Kb03W9cnuAkPkzkD/dj24+64rPyrTDxLDxXpUk8DXlgD56DLRrg7wPT3rD22qiYlclXHBBXGDW8m8StprRx65p8sJk6S25Ekf88EfxVXrkOlanAbrTZYjMuWaP8Aa59cA4z8VWSTQyE2tFJHcsQQrAn2NJkklk+kOBzTUFtHLLskbaMHaQOp7D2pRh8qXy2GHJwFHU/FLSVDnJ9WRL0lZbZQSoLcqO9SX4FC5spHmjZXClDjkZpTxFUAYjnuelMSQmb3oagQyXEaDnc4H5qP4y022027iW3c75E3Oh/toJrdlpl8C5WWZOViB4J7ZNUupahNqN3Jd3TEySHn0HsPamxTEydkJutCg3tQphQX4PtxsuLxukQ2r8moGpSmW5Zs87iaOhTfRi/Uht196jkYLE8cfNHQqxUl6Rqk+kXSXdizJcKpAbd1z6+3tXZ/AXijTvEELQ+VHa6oo3SRKMCUf+S+vuO3xQoUjNjjKNl4s0t7p0N9bS290N8cgwQe3uKyFr4eure5ltt28R4KknOV7GhQrBjk26GSVDOoWaWrkNGN2NzKScn59OlW2j29xeQS/prcY27VkZjx7A9TQoU/0pehyTw7BZWb3F3dyqqAbtqjjt/iqXVNLXWrc2+lSG3lSFipLYMm3JO73Pt+KOhUb4zSQPDj8yurkvu3HnnuKmWd79IjlPwT/wA0KFb6TiKJgbnBoUKFJAf/2Q==" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Carl Friedrich Gauss" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Carl Friedrich </div>
+                                    <div class="wfg6Pb">Gauss</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1777–1855</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes" aria-label="René Descartes"  role="button" data-hveid="72" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYISDAm">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_116" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="René Descartes" data-atf="1" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">René </div>
+                                    <div class="wfg6Pb">Descartes</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1596–1650</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/%C3%89variste_Galois" aria-label="Évariste Galois" role="button" data-hveid="75" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYISzAn">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_118" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Évariste Galois" data-atf="4" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Évariste </div>
+                                    <div class="wfg6Pb">Galois</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1811–1832</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Alcuarismi" aria-label="Alcuarismi"  role="button" data-hveid="78" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYITjAo">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_120" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Alcuarismi" data-atf="4" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Alcuarismi</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">–850 d.C.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Georg_Cantor" aria-label="Georg Cantor"  role="button" data-hveid="81" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIUTAp">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img id="dimg_122" src="data:image/jpeg;base64,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" jscontroller="XFHqe" jsaction="load:K1e2pe" class="rISBZc" alt="Georg Cantor" data-atf="4" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Georg Cantor</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1845–1918</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb13" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Paul_Erd%C5%91s" aria-label="Paul Erdős"  role="button" data-hveid="84" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIVDAq">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4FcvSsx-FeFZ-L6Rc83gH0XW8HDSJPXQ8hTbWnVDLb8FB03U3kkNUl92dBq0mQQKGsJA" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Paul Erdős" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Paul Erdős</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1913–1996</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb14" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Bernhard_Riemann" aria-label="Bernhard Riemann"  role="button" data-hveid="87" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIVzAr">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT2LRxMgsVs0aHXlzYr1hTON5BG7L4BUw4d7CfdHHwmkhPfkl42PMW_eCbhFqSuspXO0s" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Bernhard Riemann" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Bernhard </div>
+                                    <div class="wfg6Pb">Riemann</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1826–1866</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb15" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Bhaskara_II" aria-label="Bhaskara II" role="button" data-hveid="90" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIWjAs">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjK4sW4JHxoamJ8fcnVZ7Rqdm_s3Y5Tv0RoO1a9pnxgGF1Roa4iq_CNpyVrYMNjYyHwWU" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Bhaskara II" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Bhaskara II</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1114–1185</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mb16" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Carl_Boyer" aria-label="Carl Boyer" role="button" data-hveid="93" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIXTAt">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Eb6OJUaEFWMqqN4MuLAG-VbsmolbjjcJpJc3IYlT54mhiIW6E2QEp6ZwINyy3ESpcEM" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Carl Boyer" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Carl Boyer</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1906–1976</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb17" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Pierre_de_Fermat" aria-label="Pierre de Fermat"  role="button" data-hveid="96" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIYDAu">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD3yIHAgqDZuh5LDtBV962qUMIS-Q4dVoxrMVd9k5sj4JWRnEMYxZ5WfHpw52ncWmWLMg" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Pierre de Fermat" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Pierre de </div>
+                                    <div class="wfg6Pb">Fermat</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1607–1665</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb18" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Brahmagupta" aria-label="Brahmagupta" role="button" data-hveid="99" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIYzAv">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUf2tHGVk3Ev8NcrfiU25LKN-7g9Ma4dSvcjjVbCVvBQ3JyRHtHkgnnJm3k3r_FUkC1mw" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Brahmagupta" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Brahmagupta</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">598 d.C.–668 d.C.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb19" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/David_Hilbert" aria-label="David Hilbert"  role="button" data-hveid="102" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIZjAw">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGYPeWOXVymA3iSVS1e71HTV_Pz5nRTh3WlMSkK62hO5VuRoz5WmscSVNd69792ermLi0" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="David Hilbert" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">David Hilbert</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1862–1943</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mb20" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Srinivasa_Ramanujan" aria-label="Srinivasa Ramanujan" role="button" data-hveid="105" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIaTAx">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwtuxcGVZtGNoJ2SrlJ5JB2_o-3UtsU_SpCKPVm4-iGa3yZxCEMDym2v1DKSf-R7LgCK8" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Srinivasa Ramanujan" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Srinivasa </div>
+                                    <div class="wfg6Pb">Ramanujan</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1887–1920</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb21" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Karl_Weierstrass" aria-label="Karl Weierstrass" role="button" data-hveid="108" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIbDAy">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSKCdE_hE7nQTA8TW71EPirXmhjTUQhr_qtoo3ZVOHOhIsSv6mvxg_6Tcqa_lwVadReE" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Karl Weierstrass" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Karl </div>
+                                    <div class="wfg6Pb">Weierstrass</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1815–1897</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb22" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Leonardo_da_Vinci" aria-label="Leonardo da Vinci" role="button" data-hveid="111" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIbzAz">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpJLzNRxSyoqMcreegprXnBGrH2m7_XiTIUTNCsDc0RLgzlrjHIpLOmTAfW4n29SryKk" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Leonardo da Vinci" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Leonardo da </div>
+                                    <div class="wfg6Pb">Vinci</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1452–1519</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb23" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Joseph-Louis_Lagrange" aria-label="Joseph-Louis Lagrange" role="button" data-hveid="114" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIcjA0">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9MsV4fBeJGHL5TzlrgsDkQYEFPVjacChpCnoO_PUpTe_K4TsEjl7PWAIqFxODBZWy2k" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Joseph-Louis Lagrange" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Joseph-Louis </div>
+                                    <div class="wfg6Pb">Lagrange</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1736–1813</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mb24" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Fran%C3%A7ois_Vi%C3%A8te" aria-label="François Viète" role="button" data-hveid="117" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIdTA1">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWTn-zO8KVTPGG8-uJEOYyHniHCv78uEr1Y4hgbTZKrNIrkGDD-Avi7wtgUo0fbpCMd8k" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="François Viète" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">François Viète</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1540–1603</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb25" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Hermann_Weyl" aria-label="Hermann Weyl" role="button" data-hveid="120" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIeDA2">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4r_NbCZjuoNbceDVTLhgLvyk7SCc8oucZrW4GA7Uy5Zr-SbE1X9PoUcNtta6KUJ2ax0" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Hermann Weyl" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Hermann </div>
+                                    <div class="wfg6Pb">Weyl</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1885–1955</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb26" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Jean_le_Rond_d%E2%80%99Alembert" aria-label="Jean le Rond d’Alembert"  role="button" data-hveid="123" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIezA3">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSOEs5aVjJGuM_UVzweea5gt6b80TRpcgpp5FsXr2Vk7nL-uXp3pmFcUK2dySJZzqi3MA" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Jean le Rond d’Alembert" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Jean le Rond </div>
+                                    <div class="wfg6Pb">d’Alembert</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1717–1783</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb27" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Niels_Henrik_Abel" aria-label="Niels Henrik Abel" role="button" data-hveid="126" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIfjA4">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ykJVCpqye5BevIa32lU1k-oxOZ20X-7ufSk_Z_r9SjSJUQZQUikRj0wp-LjFhTFe94s" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Niels Henrik Abel" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Niels Henrik </div>
+                                    <div class="wfg6Pb">Abel</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1802–1829</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="row">
+                <div id="mb28" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Nikolai_Lobachevsky" aria-label="Nikolai Lobachevsky" role="button" data-hveid="129" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIgQEwOQ">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReQ6BcyGWoFfwVHcsBzCp8iX3TjF5UTopqia-puPRcp8NODwvZ0CkJlAOJ2FeRwfVkLA4" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Nikolai Lobachevsky" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Nikolai </div>
+                                    <div class="wfg6Pb">Lobachevsky</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1792–1856</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb29" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/John_von_Neumann" aria-label="John von Neumann"  role="button" data-hveid="132" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIhAEwOg">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6c1SLF4XlnKGUF0Wf_glDsKz0L_ZJcOYlwGCOTgiN7y0rWdtMeWAzv1HqhD4rGFFAE3w" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="John von Neumann" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">John von </div>
+                                    <div class="wfg6Pb">Neumann</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1903–1957</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb30" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Blaise_Pascal" aria-label="Blaise Pascal" role="button" data-hveid="135" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIhwEwOw">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ__-1xRIfroHfZN0mX4LrbF-lakS5WwIYiPA-HUFtHsf_E6X6jYz3VBEwcsr-x0pbgGOw" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Blaise Pascal" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Blaise Pascal</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1623–1662</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb31" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Kurt_G%C3%B6del" aria-label="Kurt Gödel" role="button" data-hveid="138" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIigEwPA">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdII3k3K5w2ETq8F_DQu58BM6uRN7TC5iXgnFkBWs8qAEOSbDJQUNKSYCzxW_mu_hiGjs" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Kurt Gödel" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Kurt Gödel</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1906–1978</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mb32" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Giuseppe_Peano" aria-label="Giuseppe Peano"  role="button" data-hveid="141" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIjQEwPQ">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREvh-nKXnhH3krgv7KWCksXSzEcmNLWNmer6HQesinWtB7zMAqrRGKj-Ly6_gnW32vPOs" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Giuseppe Peano" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Giuseppe </div>
+                                    <div class="wfg6Pb">Peano</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1858–1932</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb33" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Gotthold_Eisenstein" aria-label="Gotthold Eisenstein"  role="button" data-hveid="144" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIkAEwPg">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizvYfhHXztoXBpkiI8DM2RSPpWdxMMJq49x4sDmpRX1SJqmmLtQa7c8u-_Ga-CbXJcEU" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Gotthold Eisenstein" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Gotthold </div>
+                                    <div class="wfg6Pb">Eisenstein</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1823–1852</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb34" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Marcelo_Viana" aria-label="Marcelo Viana"  role="button" data-hveid="147" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIkwEwPw">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlXFUjVnA7D5MxEr9aErTTIOe8ftaswE5dUEKtxuutgB19zN5LCUdeNW8KSheKEM363Go" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Marcelo Viana" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Marcelo </div>
+                                    <div class="wfg6Pb">Viana</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb35" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Johannes_Kepler" aria-label="Johannes Kepler"  role="button" data-hveid="150" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIlgEwQA">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu-qqyJB4yayvVOt-jQ9FNrbWpMVOJRZyuHbmfdHM80VNF_M939pGDZudxLyr3dfwj5NY" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Johannes Kepler" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Johannes </div>
+                                    <div class="wfg6Pb">Kepler</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1571–1630</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mb36" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Fran%C3%A7ois_Arago" aria-label="François Arago"  role="button" data-hveid="153" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYImQEwQQ">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTznqIpOFhkty1nUOTlB8qVDr6OaaKdxrcutgHZJ_CjYvsQCiWqRgJH1kSq2RQ-T9ARMVg" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="François Arago" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">François </div>
+                                    <div class="wfg6Pb">Arago</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1786–1853</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb37" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Augustin-Louis_Cauchy" aria-label="Augustin-Louis Cauchy" role="button" data-hveid="156" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYInAEwQg">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXWRt01do49OcZbL74GOsqi1-GuHRdbTxuupKk2tWQbtwk0ZvkeQhqspyYk73TrwAb_4U" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Augustin-Louis Cauchy" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Augustin-</div>
+                                    <div class="wfg6Pb">Louis Cauchy</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1789–1857</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb38" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Luitzen_Egbertus_Jan_Brouwer" aria-label="Luitzen Egbertus Jan Brouwer" role="button" data-hveid="159" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYInwEwQw">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt62HV192nososjDU1MIK-pJjSO5mpqE2amqxKM6VU7cchuaneQ2_DTGIZPnrq8ysZMHY" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Luitzen Egbertus Jan Brouwer" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Luitzen </div>
+                                    <div class="wfg6Pb">Egbertus Jan Brouwer</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1881–1966</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb39" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Richard_Dedekind" aria-label="Richard Dedekind"  role="button" data-hveid="162" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIogEwRA">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0e58_jDQ4_icE2NU9DwFVoa-guqTVbI23cP3DqvbVTAFrJyrnNtNXxNJ6Xeb9ObSlczQ" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Richard Dedekind" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Richard </div>
+                                    <div class="wfg6Pb">Dedekind</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1831–1916</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mb40" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/John_Forbes_Nash" aria-label="John Forbes Nash" role="button" data-hveid="165" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIpQEwRQ">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl3SEDyJCshY56voBh5U2LADo1VcuFt3Cls9IAv85c1ybP-Wox9L08CLVV-Kv1-69V3qU" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="John Forbes Nash" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">John Forbes </div>
+                                    <div class="wfg6Pb">Nash</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1928–2015</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb41" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Pierre-Simon_Laplace" aria-label="Pierre-Simon Laplace" role="button" data-hveid="168" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIqAEwRg">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNHfWieKJ-DEn5VEo9lPDaahgxyBhIf4eD8etl3CUWCOsS6fGZHLu4UTtZxB7IHeSRp8" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Pierre-Simon Laplace" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Pierre-Simon </div>
+                                    <div class="wfg6Pb">Laplace</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1749–1827</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb42" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Henri_Lebesgue" aria-label="Henri Lebesgue" role="button" data-hveid="171" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIqwEwRw">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0-R2J5RaVV6zMIbth2CBVkUZTPwUQZqQaiMbhPgn-hzNhigpq_C54ZMnaMswpXfUXkdg" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Henri Lebesgue" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Henri </div>
+                                    <div class="wfg6Pb">Lebesgue</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1875–1941</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb43" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Bernard_Bolzano" aria-label="Bernard Bolzano" role="button" data-hveid="174" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIrgEwSA">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTqUXDoD9c1uIxMDcnxWR6fh_1Vf1BoG2syfwXiS8ck_JR-6bgdFpemiHjkvT_1uz_Z_k" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Bernard Bolzano" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Bernard </div>
+                                    <div class="wfg6Pb">Bolzano</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1781–1848</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                <div class="row">
+                <div id="mb44" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Ian_Stewart" aria-label="Ian Stewart" role="button" data-hveid="177" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIsQEwSQ">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU8CcJWvKozayR3xN2NIg8PDBggSWJ5vsi0vvOycmU-DHKk_emU770s0pJyfwS6gS-Qtc" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Ian Stewart" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Ian Stewart</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb45" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/George_Boole" aria-label="George Boole" role="button" data-hveid="180" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYItAEwSg">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99J-Gz9AWgC1XHWbgGuw-24eqQfi0I-OrKgH6KtPoHLQApZ5BQkyMR-6L_lxsYfhEDRk" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="George Boole" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">George Boole</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1815–1864</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb46" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Alan_Turing" aria-label="Alan Turing" role="button" data-hveid="183" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYItwEwSw">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJFKTOClam0sNqm3EhmdDHtjBwCHdA4WhxK1J7QgDtcfK5GIA0dD7OlRxU9gsSVbe0d9U" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Alan Turing" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Alan Turing</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1912–1954</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb47" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Maria_Gaetana_Agnesi" aria-label="Maria Gaetana Agnesi" role="button" data-hveid="186" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIugEwTA">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxbTtceWrID0qVJCMqicX5tMbFbuwDZvX9PGXHXZKM-iPstZT_Adv5cvmdgfe-OjYkuw" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Maria Gaetana Agnesi" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Maria </div>
+                                    <div class="wfg6Pb">Gaetana Agnesi</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1718–1799</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mb48" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Carl_Gustav_Jakob_Jacobi" aria-label="Carl Gustav Jakob Jacobi" role="button" data-hveid="189" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIvQEwTQ">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1UDP9y8DhPWqu3HaI2Skscjh51iPeO9ZlNxcogDdLJs2ARE984E8ccijs3o31AqkevxA" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Carl Gustav Jakob Jacobi" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Carl Gustav </div>
+                                    <div class="wfg6Pb">Jakob Jacobi</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1804–1851</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb49" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Diofanto_de_Alexandria" aria-label="Diofanto de Alexandria" role="button" data-hveid="192" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIwAEwTg">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW70jC7fWpTesZMCywPpQdFIOzG5tTa910ddZasicHoiPm-jRIOR_XFK2A9RvudNEhyp0" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Diofanto de Alexandria" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Diofanto de </div>
+                                    <div class="wfg6Pb">Alexandria</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="mb50" class="col-lg-3 col-sm-6 text-center">
+                    <a  href="https://pt.wikipedia.org/wiki/Emmy_Noether" aria-label="Emmy Noether" role="button" data-hveid="195" data-ved="0ahUKEwjz1vnxtfPkAhVXILkGHTyBCYEQ-BYIwwEwTw">
+                        <div class="mdFQt WH6xid">
+                            <div class="y6ZeVb"></div>
+                            <div class="yWTIIb">
+                                <g-img class="dblAHe  BA0A6c" style="height: 120px; width: 120px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgi7EUZHmeWh_jl2YcI57Amvs2pjkpyjG9SWXV0LHGTJAqagctTECQs9okGu4FY0z8MMg" jscontroller="SvnKM" class="JTxHbb rISBZc" jsaction="load:K1e2pe;lzy_img:eNYuKb;pr_lzy_img:KpWyKc;rcuQ6b:npT2md" alt="Emmy Noether" style="opacity: 1;" width="120" height="120"></g-img>
+                            </div>
+                            <div class="V7X3Je WH6xid">
+                                <div class="lzmqLb">
+                                    <div class="wfg6Pb">Emmy </div>
+                                    <div class="wfg6Pb">Noether</div>
+                                    <div class="P2m1Af">
+                                        <div class="wfg6Pb">1882–1935</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+           
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
